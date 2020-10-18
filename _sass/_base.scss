@@ -1,6 +1,113 @@
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
+ * {
+  transition: all 0.3s ease-out;
+}
+
+.go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(-45deg, var(--global-theme-color), 1%, $grey-color-mid 100%);
+  border-radius: 0 4px 0 32px;
+}
+
+.fa-expand-alt {
+  margin-top: -7px;
+  margin-right: -7px;
+  color: white;
+}
+
+.card-horizontal {
+  height: auto;
+  display: flex;
+}
+
+.projects
+  .grid-item {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  .card {
+    &:hover {
+    .fa-expand-alt {
+      font-size: 1.5em;
+    }
+    .go-corner {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .card-img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .card-body {
+    .project-title {
+      color: $red-color-dark;
+    }
+    .span-year {
+      display: block;
+    }
+    .span-space {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.projects {
+  .hidden {
+    height: auto;
+    display: flex;
+    font-size: 1rem;
+    max-height: 0px;
+    overflow: hidden;
+    text-align: justify;
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: all 0.15s ease;
+    border: dashed 1px white;
+
+    p {
+      line-height: 1.4em;
+      margin: 10px;
+    }
+    pre {
+      font-size: 1em;
+      line-height: 1.4em;
+      padding: 10px;
+    }
+  }
+
+  .hidden.open {
+    max-height: 100em;
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: all 0.15s ease;
+    border-color: $grey-color;
+  }
+}
 
 // Typography
 
@@ -154,16 +261,16 @@ a, table.table a {
 .news table td {
   font-size: 1rem;
   color: var(--global-text-color);
+}
+
+.news table th {
+  color: var(--global-text-color);
   .news-title {
     color: $red-color-dark;
   }
   a {
     color: $red-color-dark;
   }
-}
-
-.news table th {
-  color: var(--global-text-color);
 }
 
 // bibliography header
@@ -211,7 +318,7 @@ a, table.table a {
 footer.fixed-bottom {
   color: var(--global-footer-text-color);
   background-color: var(--global-footer-bg-color);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   .container {
     padding-top: 9px;
     padding-bottom: 8px;
@@ -339,38 +446,18 @@ footer.sticky-bottom {
 
 
 // Publications
-ol.bibliography {list-style-type: none;}
-ol.bibliography > li:before{
-  content: "[" counter(bibitem) "]";
-    position: absolute;
-    padding-top: 26px;
-    padding-left: 26px;
-}
-ol.bibliography > li {counter-increment: bibitem -1;} 
-
-.type {
-  color: $grey-color-mid;
-  border-bottom: 1px solid $grey-color-light;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  text-align: right;
-}
-.year {
-  color: $grey-color-mid;
-  border-bottom: 1px solid $grey-color-light;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  text-align: right;
+@media only screen and (min-device-width : 640px) {
+  ol.bibliography {list-style-type: none;}
+  ol.bibliography > li:before{
+    content: "[" counter(bibitem) "]";
+      position: absolute;
+      padding-top: 26px;
+      padding-left: 26px;
+  }
+  ol.bibliography > li {counter-increment: bibitem -1;} 
 }
 
-.new-strong {
-  font-weight: bold;
-  font-size: large;
-  background-color: $red-color-dark;
-  color: white;
-  border-radius: 3px;
-  padding: 2px 5px;
-}
+
 
 .publications {
   margin-top: 2rem;
@@ -391,9 +478,29 @@ ol.bibliography > li {counter-increment: bibitem -1;}
     color: $grey-color-mid;
     border-top: 1px solid $grey-color-light;
     padding-top: 1rem;
+  }
+  .type {
+    color: $grey-color-mid;
+    border-bottom: 1px solid $grey-color-light;
     margin-top: 2rem;
-    margin-bottom: -2rem;
+    margin-bottom: 2rem;
     text-align: right;
+  }
+  .year {
+    color: $grey-color-mid;
+    border-bottom: 1px solid $grey-color-light;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: right;
+  }
+  
+  .new-strong {
+    font-weight: bold;
+    font-size: large;
+    background-color: $red-color-dark;
+    color: white;
+    border-radius: 3px;
+    padding: 2px 5px;
   }
   ol.bibliography {
     list-style: none;
