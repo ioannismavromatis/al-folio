@@ -274,8 +274,24 @@ footer.sticky-bottom {
       }
     }
   }
+  .cv-grid-item {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+
   .card img {
     width: 100%;
+  }
+  .cv-frame {
+    position: relative; 
+    height: 100%; 
+    width: 100%;
+    pointer-events: none;
+    border: 0;
+  }
+  .card {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
