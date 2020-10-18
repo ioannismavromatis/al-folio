@@ -92,7 +92,7 @@ a, table.table a {
   }
   .navbar-nav .nav-item .nav-link {
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-link-hover-color);
     }
   }
   .navbar-nav .nav-item.active>.nav-link {
@@ -100,7 +100,7 @@ a, table.table a {
       font-weight: bolder;
       color: var(--global-theme-color);
       &:hover {
-        color: var(--global-hover-color);
+        color: var(--global-link-hover-color);
       }
   }
   .contact-icon {
@@ -166,17 +166,31 @@ a, table.table a {
   display: inline-block;
 }
 
+.bib-indentation {
+  margin-left: 20px;
+}
+
+.blue-mark {
+    color: blue;
+    background-color: white;
+}
+
+.navy-mark {
+    color: navy;
+    background-color: white;
+}
 
 // Social (bottom)
 
 .social {
   text-align: center;
   .contact-icon {
-    font-size: 4rem;
+    font-size: 3rem;
     a {
       color: var(--global-icon-color);
       &:hover {
         color: var(--global-theme-color);
+        text-shadow: 0 0 3px #000;
       }
     }
   }
@@ -194,6 +208,7 @@ footer.fixed-bottom {
   .container {
     padding-top: 9px;
     padding-bottom: 8px;
+    text-align: center;
   }
   a {
     color: var(--global-footer-link-color);
@@ -305,10 +320,19 @@ footer.sticky-bottom {
 
 // Publications
 
+// Publications
+.type {
+  color: $grey-color-mid;
+  border-bottom: 1px solid $grey-color-light;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
 .publications {
   margin-top: 2rem;
   h1 {
-    color: var(--global-theme-color);
+    color: $grey-color-mid;
     font-size: 2rem;
     text-align: center;
     margin-top: 1em;
@@ -321,7 +345,7 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: $grey-color-light;
+    color: $grey-color-mid;
     border-top: 1px solid $grey-color-light;
     padding-top: 1rem;
     margin-top: 2rem;
@@ -353,6 +377,12 @@ footer.sticky-bottom {
         .award {
           color: var(--global-theme-color) !important;
           border: 1px solid var(--global-theme-color);
+        }
+      }
+      span {
+        display: block;
+        a {
+          align-items: center;
         }
       }
       .title {
@@ -420,6 +450,16 @@ footer.sticky-bottom {
       div.abstract.hidden.open {
         border-color: $grey-color;
       }
+
+      div.bibtex.hidden {
+        border: dashed 1px white;
+        font-size: 0.8em;
+      }
+      div.bibtex.hidden.open {
+        border-color: $grey-color;
+        white-space: pre-wrap;
+      }
+
     }
   }
 }
