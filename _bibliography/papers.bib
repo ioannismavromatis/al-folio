@@ -1,70 +1,253 @@
 ---
 ---
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+@inproceedings{cityScaleITSG5,
+    author={{Mavromatis}, I. and {Tassi}, A. and {Piechocki}, R. and {Nix}, A.},
+    title={A City-Scale ITS-G5 Network for Next-Generation Intelligent Transportation Systems: Design Insights and Challenges},
+    booktitle={Proc. of Ad-hoc, Mobile, and Wireless Networks},
+    year={2018},
+    publisher={Springer International Publishing},
+    pages={53--63},
+    abstract={As we move towards autonomous vehicles, a reliable Vehicle-to-Everything (V2X) communication framework becomes of paramount importance. In this paper we present the development and the performance evaluation of a real-world vehicular networking testbed. Our testbed, deployed in the heart of the City of Bristol, UK, is able to exchange sensor data in a V2X manner. We will describe the testbed architecture and its operational modes. Then, we will provide some insight pertaining the firmware operating on the network devices. The system performance has been evaluated under a series of large-scale field trials, which have proven how our solution represents a low-cost high-quality framework for V2X communications. Our system managed to achieve high packet delivery ratios under different scenarios (urban, rural, highway) and for different locations around the city. We have also identified the instability of the packet transmission rate while using single-core devices, and we present some future directions that will address that.},
+    isbn={978-3-030-00247-3},
+    doi={10.1007/978-3-030-00247-3_5},
+    month={August},
+    address={Saint-Malo, France},
+    html={https://link.springer.com/chapter/10.1007/978-3-030-00247-3_5},
+    pdf={cityScaleITSG5.pdf}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@article{datasetITSG5,
+    title={A Dataset of Full-stack ITS-G5 DSRC Communications over Licensed and Unlicensed Bands using a Large-scale Urban Testbed},
+    journal={Data in Brief},
+    volume={25},
+    pages={104368},
+    year={2019},
+    issn={2352-3409},
+    month={August},
+    doi={https://doi.org/10.1016/j.dib.2019.104368},
+    html={http://www.sciencedirect.com/science/article/pii/S235234091930722X},
+    author={A. {Tassi} and I. {Mavromatis} and R. {Piechocki}},
+    keywords={ITS-G5, DSRC, RSSI, V2V, V2I, V2X, CAM},
+    abstract={A dataset of measurements of ETSI ITS-G5 Dedicated Short Range Communications (DSRC) is presented. Our dataset consists of network interactions happening between two On-Board Units (OBUs) and four Road Side Units (RSUs). Each OBU was fitted onto a vehicle driven across the FLOURISH Test Track in Bristol, UK. Each RSU and OBU was equipped with two transceivers operating at different frequencies. During our experiments, each transceiver broadcasts Cooperative Awareness Messages (CAMs) over the licensed DSRC band, and over the unlicensed Industrial, Scientific, and Medical radio (ISM) bands 2.4 GHz-2.5 GHz and 5.725 GHz-5.875 GHz. Each transmitted and received CAM is logged along with its Received Signal Strength Indicator (RSSI) value and accurate positioning information. The Media Access Control layer (MAC) layer Packet Delivery Rates (PDRs) and RSSI values are also empirically calculated across the whole length of the track for any transceiver. The dataset can be used to derive realistic approximations of the PDR as a function of RSSI values under urban environments and for both the DSRC and ISM bands – thus, the dataset is suitable to calibrate (simplified) physical layers of full-stack vehicular simulators where the MAC layer PDR is a direct function of the RSSI. The dataset is not intended to be used for signal propagation modelling. The dataset can be found at https://doi.org/10.5523/bris.eupowp7h3jl525yxhm3521f57, and it has been analyzed in the following paper: I. Mavromatis, A. Tassi, and R. J. Piechocki, “Operating ITS-G5 DSRC over Unlicensed Bands: A City-Scale Performance Evaluation,” IEEE PIMRC 2019. [Online]. Available: https://arxiv.org/abs/1904.00464.},
+    code={https://github.com/ioannismavromatis/ITS-G5_trials},
+    pdf={datasetITSG5.pdf}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+@inproceedings{driveSimulator,
+    author={I. {Mavromatis} and R. {Piechocki} and M. {Sooriyabandara} and A. {Parekh}},
+    booktitle={Proc. of IEEE Symposium on Computers and Communications (ISCC)}, 
+    title={DRIVE: A Digital Network Oracle for Cooperative Intelligent Transportation Systems}, 
+    year={2020},
+    abstract={In a world where Artificial Intelligence revolutionizes inference, prediction and decision-making tasks, Digital Twins emerge as game-changing tools. A case in point is the development and optimization of Cooperative Intelligent Transportation Systems (C-ITSs): a confluence of cyber-physical digital infrastructure and (semi)automated mobility. Herein we introduce Digital Twin for self-dRiving Intelligent VEhicles (DRIVE). The developed framework tackles shortcomings of traditional vehicular and network simulators. It provides a flexible, modular, and scalable implementation to ensure large-scale, city-wide experimentation with a moderate computational cost. The defining feature of our Digital Twin is a unique architecture allowing for submission of sequential queries, to which the Digital Twin provides instantaneous responses with the "state of the world", and hence is an Oracle. With such bidirectional interaction with external intelligent agents and realistic mobility traces, DRIVE provides the environment for development, training and optimization of Machine Learning based C-ITS solutions.},
+    month={July},
+    address={Rennes, France},
+    code={https://github.com/ioannismavromatis/DRIVE_Simulator},
+    pdf={driveSimulator.pdf}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{secureOffloading,
+    author={A. {Tassi} and I. {Mavromatis} and R. J. {Piechocki} and A. {Nix}},
+    booktitle={Proc. of IEEE Vehicular Technology Conference (VTC2019-Spring)}, 
+    title={Secure Data Offloading Strategy for Connected and Autonomous Vehicles}, 
+    year={2019},
+    abstract={Connected and Automated Vehicles (CAVs) are expected to constantly interact with a network of processing nodes installed in secure cabinets located at the side of the road - - thus, forming Fog Computing-based infrastructure for Intelligent Transportation Systems (ITSs). Future city-scale ITS services will heavily rely upon the sensor data regularly off-loaded by each CAV on the Fog Computing network. Due to the broadcast nature of the medium, CAVs' communications can be vulnerable to eavesdropping. This paper proposes a novel data offloading approach where the Random Linear Network Coding (RLNC) principle is used to ensure the probability of an eavesdropper to recover relevant portions of sensor data is minimized. Our preliminary results confirm the effectiveness of our approach when operated in a large-scale ITS networks.},
+    doi={10.1109/VTCSpring.2019.8746698},
+    ISSN={2577-2465},
+    month={April},
+    address={Kuala Lumpur, Malaysia},
+    html={https://ieeexplore.ieee.org/document/8746698},
+    pdf={secureOffloading.pdf}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{parallelOmnet,  
+    author={I. {Mavromatis} and A. {Tassi} and R. J. {Piechocki} and A. {Nix}},  
+    booktitle={Proc. of IEEE Vehicular Networking Conference (VNC)},   
+    title={Poster: Parallel Implementation of the OMNeT++ INET Framework for V2X Communications},   
+    year={2018},  
+    abstract={The field of parallel network simulation frameworks is evolving at a great pace. That is also because of the growth of Intelligent Transportation Systems (ITS) and the necessity for cost-effective large-scale trials. In this contribution, we will focus on the INET Framework and how we re-factor its single-thread code to make it run in a multi-thread fashion. Our parallel version of the INET Framework can significantly reduce the computation time in city-scale scenarios, and it is completely transparent to the user. When tested in different configurations, our version of INET ensures a reduction in the computation time of up to 43%.},  
+    doi={10.1109/VNC.2018.8628429},  
+    ISSN={2157-9865},  
+    month={December},
+    address={Taipei, Taiwan},
+    note={IEEE Popularity Award},
+    html={https://ieeexplore.ieee.org/document/8628429},
+    code={https://github.com/ioannismavromatis/multithread-inet},
+    pdf={parallelOmnet.pdf}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{agileCalibration,
+    author={I. {Mavromatis} and A. {Tassi} and R. J. {Piechocki} and A. {Nix}},
+    booktitle={Proc. of IEEE Vehicular Networking Conference (VNC)}, 
+    title={Agile Calibration Process of Full-stack Simulation Frameworks for V2X Communications}, 
+    year={2017},
+    pages={89-96},
+    abstract={Computer simulations and real-world car trials are essential to investigate the performance of Vehicle-to-Everything (V2X) networks. However, simulations are imperfect models of the physical reality and can be trusted only when they indicate agreement with the real-world. On the other hand, trials lack reproducibility and are subject to uncertainties and errors. In this paper, we will illustrate a case study where the interrelationship between trials, simulation, and the reality-of-interest is presented. Results are then compared in a holistic fashion. Our study will describe the procedure followed to macroscopically calibrate a full-stack network simulator to conduct high-fidelity full-stack computer simulations.},
+    keywords={calibration;computer networks;digital simulation;traffic engineering computing;vehicular ad hoc networks;vehicle-to-everything networks;V2X networks;high-fidelity full-stack computer simulations;full-stack network simulator;agile calibration process;Veins;Calibration;Roads;Conferences;Quality of service;Linux;Kernel;Connected Autonomous Vehicles;V2X;IEEE 802.11p/DSRC;Full-Stack Simulator;VEINS;Validation process},
+    doi={10.1109/VNC.2017.8275604},
+    ISSN={2157-9865},
+    month={November},
+    address={Torino, Italy},
+    html={https://ieeexplore.ieee.org/document/8275604},
+    pdf={agileCalibration.pdf}
+}
+
+@inproceedings{beamAlignment,
+    author={I. {Mavromatis} and A. {Tassi} and R. J. {Piechocki} and A. {Nix}},
+    booktitle={Proc. of Antennas, Propagation   RF Technology for Transport and Autonomous Platforms}, 
+    title={Beam Alignment for Millimetre Wave Links with Motion Prediction of Autonomous Vehicles}, 
+    year={2017},
+    pages={1-8},
+    abstract={Intelligent Transportation Systems (ITSs) require ultra-low end-to-end delays and multi-gigabit-per-second data transmission. Millimetre Waves (mmWaves) communications can fulfil these requirements. However, the increased mobility of Connected and Autonomous Vehicles (CAVs), requires frequent beamforming - thus introducing increased overhead. In this paper, a new beamforming algorithm is proposed able to achieve overhead-free beamforming training. Leveraging from the CAVs sensory data, broadcast with Dedicated Short Range Communications (DSRC) beacons, the position and the motion of a CAV can be estimated and beamform accordingly. To minimise the position errors, an analysis of the distinct error components was presented. The network performance is further enhanced by adapting the antenna beamwidth with respect to the position error. Our algorithm outperforms the legacy IEEE 802.11ad approach proving it a viable solution for the future ITS applications and services.},
+    keywords={array signal processing;data communication;intelligent transportation systems;millimetre wave antennas;millimetre wave propagation;minimisation;mobile radio;mobile robots;motion estimation;motion measurement;radio links;radionavigation;wireless LAN;beam alignment;millimetre wave links;motion prediction;intelligent transportation systems;ultra-low end-to-end delays;multigigabit-per-second data transmission;mmWaves communications;connected and autonomous vehicles;beamforming algorithm;overhead-free beamforming training;CAV sensory data;dedicated short range communications;DSRC beacons;CAV motion estimation;CAV position estimation;position error minimisation;distinct error components;network performance;antenna beamwidth;IEEE 802.11ad approach;ITS applications;ITS services;Array signal processing;Training;Antennas;Delays;Global Positioning System;Autonomous vehicles;Algorithm design and analysis;Connected Autonomous Vehicles;mmWave;Beamwidth Optimisation;Beamforming;Heterogeneity;MAC layer;Vehicle-to-Infrastructure},
+    doi={10.1049/ic.2017.0023},
+    month={February},
+    address={Birmingham, UK},
+    html={https://ieeexplore.ieee.org/document/8277251},
+    pdf={beamAlignment.pdf}
+}
+
+@inproceedings{efficientV2V,
+    author={I. {Mavromatis} and A. {Tassi} and R. J. {Piechocki} and A. {Nix}},
+    booktitle={Proc. of IEEE International Conference on Communications Workshops (ICC Workshops)}, 
+    title={Efficient V2V Communication Scheme for 5G mmWave Hyper-Connected CAVs}, 
+    year={2018},
+    pages={1-6},
+    abstract={Connected and Autonomous Vehicles (CAVs) require continuous access to sensory data to perform complex high-speed maneuvers and advanced trajectory planning. High priority CAVs are particularly reliant on extended perception horizon facilitated by sensory data exchange between CAVs. Existing technologies such as the Dedicated Short Range Communications (DSRC) are ill-equipped to provide advanced cooperative perception service. This creates the need for more sophisticated technologies such as the 5G Millimetre- Waves (mmWaves). In this work, we propose a distributed Vehicle-to- Vehicle (V2V) mmWaves association scheme operating in a heterogeneous manner. Our system utilises the information exchanged within the DSRC frequency band to bootstrap the best CAV pairs formation. Using a Stable Fixtures Matching Game, we form V2V multipoint-to-multipoint links. Compared to more traditional point-to-point links, our system provides almost twice as much sensory data exchange capacity for high priority CAVs while doubling the mmWaves channel utilisation for all the vehicles in the network.},
+    keywords={5G mobile communication;millimetre wave communication;vehicles;vehicular ad hoc networks;mmWaves channel utilisation;trajectory planning;Dedicated Short Range Communications;distributed Vehicle-to- Vehicle mmWaves association scheme;DSRC frequency band;CAV pairs formation;V2V multipoint-to-multipoint links;sensory data exchange capacity;V2V communication;5G mmWave hyper-connected CAV},
+    doi={10.1109/ICCW.2018.8403780},
+    ISSN={2474-9133},
+    month={May},
+    address={Kansas, USA},
+    html={https://ieeexplore.ieee.org/document/8403780},
+    pdf={efficientV2V.pdf}
+}
+
+@inproceedings{anomaliesDetection,
+    author={X. {Wang} and I. {Mavromatis} and A. {Tassi} and R. {Santos-Rodriguez} and R. J. {Piechocki}},
+    booktitle={Proc. of IEEE Connected and Automated Vehicles Symposium (CAVS)}, 
+    title={Location Anomalies Detection for Connected and Autonomous Vehicles}, 
+    year={2019},
+    pages={1-5},
+    abstract={Future Connected and Automated Vehicles (CAVs), and more generally ITS, will form a highly interconnected system. Such a paradigm is referred to as the Internet of Vehicles (herein Internet of CAVs) and is a prerequisite to orchestrate traffic flows in cities. For optimal decision making and supervision, traffic centres will have access to suitably anonymized CAV mobility information. Safe and secure operations will then be contingent on early detection of anomalies. In this paper, a novel unsupervised learning model based on deep autoencoder is proposed to detect the self-reported location anomaly in CAVs, using vehicle locations and the Received Signal Strength Indicator (RSSI) as features. Quantitative experiments on simulation datasets show that the proposed approach is effective and robust in detecting self-reported location anomalies.},
+    keywords={intelligent transportation systems;mobile computing;road traffic;unsupervised learning;ITS;RSSI;CAV mobility information;Internet of Vehicles;connected and automated vehicles;location anomalies detection;received signal strength indicator;unsupervised learning model;traffic centres;traffic flows;Anomaly detection;Transmitters;Training;Received signal strength indicator;Rician channels;Buildings;Data models},
+    doi={10.1109/CAVS.2019.8887778},
+    month={September},
+    address={Hawaii, USA},
+    html={https://ieeexplore.ieee.org/document/8887778},
+    pdf={anomaliesDetection.pdf}
+}
+
+@inproceedings{agileOffloading,
+    author={A. {Tassi} and I. {Mavromatis} and R. {Piechocki} and A. {Nix} and C. {Compton} and T. {Poole} and W. {Schuster}},
+    booktitle={Proc. of IEEE Vehicular Technology Conference (VTC2019-Spring)}, 
+    title={Agile Data Offloading over Novel Fog Computing Infrastructure for CAVs}, 
+    year={2019},
+    pages={1-6},
+    abstract={Future Connected and Automated Vehicles (CAVs) will be supervised by cloud-based systems overseeing the overall security and orchestrating traffic flows. Such systems rely on data collected from CAVs across the whole city operational area. This paper develops a Fog Computing-based infrastructure for future Intelligent Transportation Systems (ITSs) enabling an agile and reliable off-load of CAV data. Since CAVs are expected to generate large quantities of data, it is not feasible to assume data off-loading to be completed while a CAV is in the proximity of a single Road-Side Unit (RSU). CAVs are expected to be in the range of an RSU only for a limited amount of time, necessitating data reconciliation across different RSUs, if traditional approaches to data off-load were to be used. To this end, this paper proposes an agile Fog Computing infrastructure, which interconnects all the RSUs so that the data reconciliation is solved efficiently as a by-product of deploying the Random Linear Network Coding (RLNC) technique. Our numerical results confirm the feasibility of our solution and show its effectiveness when operated in a large-scale urban testbed.},
+    keywords={cloud computing;intelligent transportation systems;linear codes;network coding;random codes;road traffic;vehicular ad hoc networks;road-side unit;connected and automated vehicles;RLNC technique;random linear network coding;data reconciliation;traffic flows;agile data offloading;agile Fog Computing infrastructure;CAV data;future Intelligent Transportation Systems;Fog Computing-based infrastructure;cloud-based systems;novel Fog Computing infrastructure;Sensors;Cloud computing;Edge computing;Protocols;Standards;Urban areas;Network coding},
+    doi={10.1109/VTCSpring.2019.8746302},
+    ISSN={2577-2465},
+    month={April},
+    note={IEEE Best Paper Award},
+    address={Kuala Lumpur, Malaysia},
+    html={https://ieeexplore.ieee.org/document/8746302},
+    pdf={agileOffloading.pdf}
+}
+
+@inproceedings{urbanTrafficFlow,
+    author={I. {Mavromatis} and A. {Tassi} and R. J. {Piechocki} and M. {Sooriyabandara}},
+    booktitle={Proc. of IEEE Vehicular Technology Conference (VTC2020-Spring)}, 
+    title={On Urban Traffic Flow Benefits of Connected and Automated Vehicles}, 
+    year={2020},
+    pages={1-7},
+    abstract={Automated Vehicles are an integral part of Intelligent Transportation Systems (ITSs) and are expected to play a crucial role in the future mobility services. This paper investigates two classes of self-driving vehicles: (i) Level 4&5 Automated Vehicles (AVs) that rely solely on their on-board sensors for environmental perception tasks, and (ii) Connected and Automated Vehicles (CAVs), leveraging connectivity to further enhance perception via driving intention and sensor information sharing. Our investigation considers and quantifies the impact of each vehicle group in large urban road networks in Europe and in the USA. The key performance metrics are the traffic congestion, average speed and average trip time. Specifically, the numerical studies show that the traffic congestion can be reduced by up to a factor of four, while the average flow speeds of CAV group remains closer to the speed limits and can be up to 300% greater than the human-driven vehicles. Finally, traffic situations are also studied, indicating that even a small market penetration of CAVs will have a substantial net positive effect on the traffic flows.},
+    keywords={road traffic;road traffic control;road vehicles;traffic engineering computing;urban traffic flow benefits;Intelligent Transportation Systems;future mobility services;self-driving vehicles;Level 4&5 Automated Vehicles;environmental perception tasks;Connected;sensor information sharing;vehicle group;traffic congestion;average flow speeds;human-driven vehicles;Roads;Urban areas;Mathematical model;Sensors;Autonomous vehicles;Layout;ITS;CAV;AV;SUMO;Simulation Framework;Urban Mobility.},
+    doi={10.1109/VTC2020-Spring48590.2020.9128758},
+    ISSN={2577-2465},
+    month={May},
+    address={Antwerp, Belgium},
+    html={https://ieeexplore.ieee.org/document/9128758},
+    code={https://github.com/ioannismavromatis/sumoCAVs},
+    pdf={urbanTrafficFlow.pdf}
+}
+
+@inproceedings{mmwaveInfrastructureITS,
+    author={I. {Mavromatis} and A. {Tassi} and R. J. {Piechocki} and A. {Nix}},
+    booktitle={Proc. of IEEE Vehicular Technology Conference (VTC2019-Spring)}, 
+    title={Efficient Millimeter-Wave Infrastructure Placement for City-Scale ITS}, 
+    year={2019},
+    pages={1-5},
+    abstract={Millimeter Waves (mmWaves) will play a pivotal role in the next- generation of Intelligent Transportation Systems (ITSs). However, in deep urban environments, sensitivity to blockages creates the need for more sophisticated network planning. In this paper, we present an agile strategy for deploying road-side nodes in a dense city scenario. In our system model, we consider strict Quality-of-Service (QoS) constraints (e.g. high throughput, low latency) that are typical of ITS applications. Our approach is scalable, insofar that takes into account the unique road and building shapes of each city, performing well for both regular and irregular city layouts. It allows us not only to achieve the required QoS constraints but it also provides up to 50\% reduction in the number of nodes required, compared to existing deployment solutions.},
+    keywords={intelligent transportation systems;millimetre wave communication;mobile computing;quality of service;telecommunication network planning;vehicular ad hoc networks;city-scale ITS;Intelligent Transportation Systems;deep urban environments;blockages;road-side nodes;dense city scenario;Quality-of-Service constraints;irregular city layouts;network planning;QoS constraints;millimeter-wave infrastructure placement;Urban areas;Roads;Quality of service;Buildings;Genetic algorithms;Tools;Computational geometry},
+    doi={10.1109/VTCSpring.2019.8746518},
+    ISSN={2577-2465},
+    month={April},
+    address={Kuala Lumpur, Malaysia},
+    html={https://ieeexplore.ieee.org/document/8746518},
+    pdf={mmwaveInfrastructureITS.pdf}
+}
+
+@inproceedings{macLayerBeamSteering,
+    author={I. {Mavromatis} and A. {Tassi} and R. J. {Piechocki} and A. {Nix}},
+    booktitle={Proc. of IEEE Vehicular Technology Conference (VTC-Fall)}, 
+    title={MmWave System for Future ITS: A MAC-Layer Approach for V2X Beam Steering}, 
+    year={2017},
+    pages={1-6},
+    abstract={Millimetre Waves (mmWave) systems have the potential of enabling multi-gigabit-per-second communications in future Intelligent Transportation Systems (ITSs). Unfortunately, because of the increased vehicular mobility, they require frequent antenna beam realignments - thus significantly increasing the in-band Beamforming (BF) overhead. In this paper, we propose Smart Motion-prediction Beam Alignment (SAMBA), a MAC-layer algorithm that exploits the information broadcast via DSRC beacons by all vehicles. Based on this information, overhead-free BF is achieved by estimating the position of the vehicle and predicting its motion. Moreover, adapting the beamwidth with respect to the estimated position can further enhance the performance. Our investigation shows that SAMBA outperforms the IEEE 802.11ad BF strategy, increasing the data rate by more than twice for sparse vehicle density while enhancing the network throughput proportionally to the number of vehicles. Furthermore, SAMBA was proven to be more efficient compared to legacy BF algorithm under highly dynamic vehicular environments and hence, a viable solution for future ITS services.},
+    keywords={access protocols;array signal processing;beam steering;intelligent transportation systems;millimetre wave communication;vehicular ad hoc networks;wireless LAN;information broadcast;DSRC beacons;overhead-free BF;SAMBA;sparse vehicle density;legacy BF algorithm;highly dynamic vehicular environments;future ITS services;MmWave system;MAC-layer approach;V2X beam steering;Millimetre Waves systems;future Intelligent Transportation Systems;ITSs;frequent antenna beam realignments;in-band Beamforming overhead;Smart Motion-prediction Beam Alignment;MAC-layer algorithm;vehicular mobility;Delays;Array signal processing;Antennas;Heuristic algorithms;Vehicle dynamics;Sensors;Resource management},
+    doi={10.1109/VTCFall.2017.8288267},
+    ISSN={},
+    month={September},
+    address={Toronto, Canada},
+    html={https://ieeexplore.ieee.org/document/8288267},
+    pdf={macLayerBeamSteering.pdf}
+}
+
+@inproceedings{itsg5Unlicensed,
+    author={I. {Mavromatis} and A. {Tassi} and R. J. {Piechocki}},
+    booktitle={Proc. of IEEE Annual International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC)}, 
+    title={Operating ITS-G5 DSRC over Unlicensed Bands: A City-Scale Performance Evaluation}, 
+    year={2019},
+    pages={1-7},
+    abstract={Future Connected and Autonomous Vehicles (CAVs) will be equipped with a large set of sensors. The large amount of generated sensor data is expected to be exchanged with other CAVs and the road-side infrastructure. Both in Europe and the US, Dedicated Short Range Communications (DSRC) systems, based on the IEEE 802.11p Physical Layer, are key enabler for the communication among vehicles. Given the expected market penetration of connected vehicles, the licensed band of 75 MHz, dedicated to DSRC communications, is expected to become increasingly congested. In this paper, we investigate the performance of a vehicular communication system, operated over the unlicensed bands 2.4 GHz-2.5 GHz and 5.725 GHz-5.875 GHz. Our experimental evaluation was carried out in a testing track in the centre of Bristol, UK and our system is a full-stack ETSI ITS-G5 implementation. Our performance investigation compares key communication metrics (e.g., packet delivery rate, received signal strength indicator) measured by operating our system over the licensed DSRC an the considered unlicensed bands. In particular, when operated over the 2.4 GHz-2.5 GHz band, our system achieves comparable performance to the case when the DSRC band is used. On the other hand, as soon as the system, is operated over the 5.725 GHz-5.875 GHz band, the packet delivery rate is 30% smaller compared to the case when the DSRC band is employed. These findings prove that operating our system over unlicensed ISM bands is a viable option. During our experimental evaluation, we recorded all the generated network interactions and the complete data set has been publicly available.},
+    keywords={performance evaluation;vehicular ad hoc networks;city-scale performance evaluation;dedicated short range communications systems;IEEE 802.11p physical layer;expected market penetration;vehicular communication system;full-stack ETSI ITS-G5 implementation;packet delivery rate;unlicensed ISM bands;sensor data generation;ITS-G5 DSRC communications;CAV;connected and autonomous vehicles;Bristol;UK;received signal strength indicator;frequency 5.725 GHz to 5.875 GHz;frequency 2.4 GHz to 2.5 GHz;frequency 75.0 MHz;Data Offloading;ITS;CAV;V2X;DSRC;ITS-G5},
+    doi={10.1109/PIMRC.2019.8904214},
+    ISSN={2166-9589},
+    month={September},
+    address={Istanbul, Turkey},
+    html={https://ieeexplore.ieee.org/document/8904214},
+    pdf={itsg5Unlicensed.pdf}
+}
+
+@book{qoeWireless,
+    author={I. {Mavromatis} and P. {Chatzimisios}},
+    booktitle={Encyclopedia of Information Science and Technology, Third Edition},
+    title={Studying Quality of Experience (QoE) over Wireless Networks},
+    year={2015},
+    abstract={As stated earlier, QoE is subjective, user-centric and content-dependent. Now is the time that QoS firstly, and more terms later come into foreground. Under QoS the idea is that transmission rates, error rates and other characteristics can be measured, improved and guaranteed in advance. By using parameters as bit rate, jitter, delay, packet loss, a service can be described and evaluated. Later in this article, the differences between QoS and QoE will be discussed in more detail. In addition with QoS, the term Class of Service (CoS) can also be found in the literature in order to describe the semantics and parameters of a specific type of QoS. Applications and services are categorized as symmetrical or asymmetrical judging by the equality of the bandwidth in both uplink and downlink directions. Also elastic and non-elastic characterizations where used, based on the minimum level of bandwidth needed and finally interactive and non-interactive depending on the human contact with a service Grade of Service (GoS) describes all the phenomena occurring during connection setup, release and maintenance. It appears mostly in circuit switched optical services and is the probability of the service to be blocked or delayed for more than a specific interval due to the high traffic intensity and the lack of available resources.Finally, Quality of Resilience (QoR) is perceived as one of the dimensions of QoS and covers the gray areas when a service is operational but not fully functional and is characterized as degraded. Approaches related to QoR are not well formalized as the ones in QoS, CoS, or GoS.},
+    doi={10.4018/978-1-4666-5888-2.ch620},
+    publisher={IGI Global},
+    pages={6307-6317},
+    month={December},
+    html={https://www.igi-global.com/chapter/studying-quality-of-experience-qoe-over-wireless-networks/113086}
+}
+
+@thesis{phdThesis,
+    author={I. {Mavromatis}},
+    booktitle={PhD Thesis},
+    title={5G Communication Framework for Smarter Autonomous Vehicles},
+    year={2018},
+    month={October},
+    html={https://www.dropbox.com/s/nbh0bi2ogh8721u/PhD_Thesis_final.pdf?dl=0},
+    pdf={phdThesis.pdf}
+}
+
+@thesis{mscThesis,
+    author={I. {Mavromatis}},
+    booktitle={MSc Thesis},
+    title={Propagation Modelling using Iterative Physical Optics},
+    year={2014},
+    month={October},
+    html={https://www.dropbox.com/s/kdrp1b8hbmigruw/Dissertation.pdf?dl=0},
+    pdf={mscDissertation.pdf}
 }

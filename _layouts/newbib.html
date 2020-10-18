@@ -1,0 +1,171 @@
+---
+layout: default
+---
+<div class="post">
+  <div class="row">
+    <div class="col-sm-1">
+      <p class="badge"></p>
+    {% if entry.abbr %}
+      {% if site.data.venues[entry.abbr] %}
+      <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a></abbr>
+      {% else %}
+      <abbr class="badge">{{entry.abbr}}</abbr>
+      {% endif %}
+    {% endif %}
+    </div>
+
+    <div id="{{entry.key}}" class="col-sm-11">
+      {% if entry.type == "thesis" %}
+        <span class="title"><i>{{entry.title}}</i></span>
+        <span class="author">
+          {% for author in entry.author_array %}
+            {% if author.last == site.scholar.last_name %}
+              <b>{{author.first}} {{author.last}}</b>
+            {% endif %}
+          {% endfor %}
+          </span>
+        <span><em>{{entry.booktitle}}, </em>{{entry.year}}</span>
+      {% else %}
+        <span class="title"><i>{{entry.title}}</i></span>
+        <span class="author">
+          {% for author in entry.author_array %}
+            {% if forloop.length == 1 %}
+              {% if author.last == site.scholar.last_name %}
+                <b>{{author.first}} {{author.last}}</b>
+              {% else %}
+                {{author.first}} {{author.last}}
+              {% endif %}
+            {% else %}
+              {% unless forloop.last %}
+                {% if author.last == site.scholar.last_name %}
+                  <b>{{author.first}} {{author.last}}</b>,
+                {% else %}
+                  {% if site.data.coauthors[author.last] %}
+                    <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}}, {{author.last}}</a>,
+                  {% else %}
+                    {{author.first}} {{author.last}},
+                  {% endif %}
+                {% endif %}
+              {% else %}
+                {% if author.last == site.scholar.last_name %}
+                  and <b>{{author.first}} {{author.last}}</b>
+                {% else %}
+                  {% if site.data.coauthors[author.last] %}
+                    and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.first}} {{author.last}}</a>
+                  {% else %}
+                    and {{author.first}} {{author.last}}
+                  {% endif %}
+                {% endif %}
+              {% endunless %}
+            {% endif %}
+          {% endfor %}
+        </span>
+        
+        <span class="periodical">
+        {% if entry.type == "article" %}
+          <em>{{entry.journal}},</em>
+        {% elsif entry.type == "inproceedings" %}
+          <em>In {{entry.booktitle}},</em>
+        {% elsif entry.type == "book" %}
+          <em>In {{entry.booktitle}},</em>
+        {% endif %}  
+        {% if entry.year %}
+          {{entry.year}}
+        {% endif %}
+        </span>
+      {% endif %}
+
+      <div class="row align-items-center">
+        <div class="text-right btn-group btn-group-sm" role="group">
+          <a title="Bibtex (Show/hide)" class="bibtex fa fa-book btn btn-dark" role="button"></a>
+          
+          {% if entry.abstract %}
+            <a title="Abstract (Show/Hide)" class="abstract fa fa-font btn btn-dark" role="button"></a>
+          {% else %}
+            <a class="abstract fa fa-font btn btn-dark disabled" role="button"></a>
+          {% endif %}
+
+          {% if entry.type == "thesis" %}
+              {% if entry.html %}
+                <a href="{{ entry.html }}" title="Online Access" class="ai ai-semantic-scholar btn btn-dark" role="button"></a>
+              {% else %}
+                <a class="ai ai-semantic-scholar btn btn-dark disabled" role="button"></a>
+              {% endif %}     
+          {% else %}
+              {% if entry.doi %}
+                <a href="http://dx.doi.org/{{ entry.doi }}" title="DOI" class="ai ai-doi btn btn-dark" role="button"></a>
+              {% else %}
+                <a class="ai ai-doi btn btn-dark disabled" role="button"></a>
+              {% endif %}
+          {% endif %}
+
+          {% if entry.pdf %}
+            <a href="{{ entry.pdf | prepend: '/assets/pdf/publications/' | relative_url }}" title="Download PDF" class="fa fa-download btn btn-dark" role="button"></a>
+          {% else %}
+            <a class="fa fa-download btn btn-dark disabled" role="button"></a>
+          {% endif %}
+          <!-- {% if entry.supp %}
+            [<a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" target="_blank" role="button">Supp</a>]
+          {% endif %}
+          {% if entry.poster %}
+            [<a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" target="_blank" role="button">Poster</a>]
+          {% endif %}
+          {% if entry.slides %}
+            [<a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" target="_blank" role="button">Slides</a>]
+          {% endif %} -->
+          {% if entry.code %}
+            <a href="{{ entry.code }}" title="GitHub Repo" role="button" class="fab fa-github btn btn-dark"></a>
+          {% else %}
+            <a class="fab fa-github btn btn-dark disabled" role="button"></a>
+          {% endif %}
+        </div>
+        <div>{% if entry.note %} <strong class="new-strong">{{ entry.note }}</strong> {% endif %} </div>
+      </div>
+
+      <!-- Hidden abstract block -->
+      {%- if entry.abstract -%}
+      <div class="abstract hidden">
+        <p>{{ entry.abstract }}</p>
+      </div>
+      {%- endif -%}
+      
+      <!-- Hidden bibtex block -->
+      <!-- <div class="bibtex hidden">{{ entry.bibtex }}</div> -->
+      <div class="bibtex hidden">
+        <div id="copy-{{ entry.key }}">
+          <div style="color:firebrick;">@{{ entry.type }}&#123;<mark class="navy-mark">{{- entry.key -}},</mark></div>
+              <div class="bib-indentation"><mark class="blue-mark">author</mark>=&#123;{{- entry.author -}}&#125;,</div>
+              {%- if entry.booktitle -%}
+              <div class="bib-indentation"><mark class="blue-mark">booktitle</mark>=&#123;{{- entry.booktitle -}}&#125;,</div>
+              {%- endif -%}
+              {%- if entry.volume -%}
+              <div class="bib-indentation"><mark class="blue-mark">volume</mark>=&#123;{{- entry.volume -}}&#125;,</div>
+              {%- endif -%}
+              <div class="bib-indentation"><mark class="blue-mark">title</mark>=&#123;&#123;{{- entry.title -}}&#125;&#125;,</div>
+              <div class="bib-indentation"><mark class="blue-mark">year</mark>=&#123;{{- entry.year -}}&#125;,</div>
+              <div class="bib-indentation"><mark class="blue-mark">month</mark>=&#123;{{- entry.month -}}&#125;,</div>
+              {%- if entry.doi -%}
+              <div class="bib-indentation"><mark class="blue-mark">doi</mark>=&#123;{{- entry.doi -}}&#125;,</div>
+              {%- endif -%}
+              {%- if entry.pages -%}
+              <div class="bib-indentation"><mark class="blue-mark">pages</mark>=&#123;{{- entry.pages -}}&#125;,</div>
+              {%- endif -%}
+              {%- if entry.ISSN -%}
+              <div class="bib-indentation"><mark class="blue-mark">ISSN</mark>=&#123;{{- entry.ISSN -}}&#125;,</div>
+              {%- endif -%}
+              {%- if entry.address -%}
+              <div class="bib-indentation"><mark class="blue-mark">address</mark>=&#123;{{- entry.address -}}&#125;,</div>
+              {%- endif -%}
+              {%- if entry.keywords -%}
+              <div class="bib-indentation"><mark class="blue-mark">keywords</mark>=&#123;{{- entry.keywords -}},&#125;</div>
+              {%- endif -%}
+          <div style="color:firebrick;">&#125;</div>
+        </div>
+        <div style="color: white;">-</div>
+        <div class="text-center">
+          <a id="{{ entry.key }}" class="copybutton btn btn-sm btn-outline-dark" role="button" title="Copy to clipboard">Copy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
