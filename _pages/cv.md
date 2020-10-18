@@ -1,12 +1,17 @@
 ---
 layout: page
-title: My CVs
+title: vitae
 permalink: /cv/
-description: A PDF version of my CVs.
+description: PDF version of my CVs.
 nav: true
 social: true
 post-header: false
 ---
+<header class="post-header">
+    <h1 class="post-title">My CVs</h1>
+    <p class="post-description">A PDF version of my CVs.</p>
+</header>
+
 <div class="projects row">
     <div class="cv-grid-item">
         <div class="card text-center hoverable">

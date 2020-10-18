@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    $('a.abstract').click(function() {
-        $(this).parent().parent().find(".abstract.hidden").toggleClass('open');
+    $('a.abstract').click(function () {
+        $(this).parent().parent().parent().find(".abstract.hidden").toggleClass('open');
     });
-    $('a.bibtex').click(function() {
-        $(this).parent().parent().find(".bibtex.hidden").toggleClass('open');
+    $('a.bibtex').click(function () {
+        $(this).parent().parent().parent().find(".bibtex.hidden").toggleClass('open');
     });
 
     $('a.copybutton').click(function (event) {
@@ -17,5 +17,9 @@ $(document).ready(function() {
         window.getSelection().addRange(range);
         document.execCommand("copy");
         window.getSelection().removeAllRanges();// to deselect
+    });
+
+    $('div.card').click(function () {
+        $(this).find(".hidden").toggleClass('open');
     });
 });

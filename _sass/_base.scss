@@ -149,11 +149,6 @@ a, table.table a {
 }
 
 
-.post-image {
-  max-width: 40%;
-  margin: 0 auto;
-}
-
 // News
 
 .news table td {
@@ -249,6 +244,18 @@ footer.sticky-bottom {
   h1 {
     color: var(--global-theme-color);
     font-size: 5rem;
+  }
+}
+
+.post {
+  .post-content {
+    a {
+      color: $red-color-dark;
+    }
+    .post-image {
+      max-width: 40%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -356,6 +363,15 @@ ol.bibliography > li {counter-increment: bibitem -1;}
   text-align: right;
 }
 
+.new-strong {
+  font-weight: bold;
+  font-size: large;
+  background-color: $red-color-dark;
+  color: white;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
 .publications {
   margin-top: 2rem;
   h1 {
@@ -442,6 +458,22 @@ ol.bibliography > li {counter-increment: bibitem -1;}
           }
         }
       }
+      em.star {
+        border-bottom: none;
+        color: var(--global-theme-color);
+        font-style: normal;
+      }
+      a.abstract, a.bibtex a.copybutton {
+        cursor: pointer;
+      }
+
+      a.copybutton {
+        margin-top: -15px;
+        &:hover {
+          color: var(--global-theme-color);
+          text-shadow: 0 0 3px #000;
+        }
+      }
       .hidden {
         font-size: 0.875rem;
         max-height: 0px;
@@ -471,18 +503,20 @@ ol.bibliography > li {counter-increment: bibitem -1;}
         -o-transition: 0.15s ease;
         transition: all 0.15s ease;
       }
-      div.abstract.hidden {
+      .abstract.hidden {
         border: dashed 1px white;
       }
-      div.abstract.hidden.open {
+      .abstract.hidden.open {
         border-color: $grey-color;
       }
 
-      div.bibtex.hidden {
+      .bibtex.hidden {
+        font-family: monospace;
         border: dashed 1px white;
-        font-size: 0.8em;
+        font-size: 1em;
       }
-      div.bibtex.hidden.open {
+      .bibtex.hidden.open {
+        font-family: monospace;
         border-color: $grey-color;
         white-space: pre-wrap;
       }
