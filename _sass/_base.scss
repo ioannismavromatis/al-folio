@@ -148,11 +148,23 @@ a, table.table a {
   }
 }
 
+
+.post-image {
+  max-width: 40%;
+  margin: 0 auto;
+}
+
 // News
 
 .news table td {
   font-size: 1rem;
   color: var(--global-text-color);
+  .news-title {
+    color: $red-color-dark;
+  }
+  a {
+    color: $red-color-dark;
+  }
 }
 
 .news table th {
@@ -298,6 +310,7 @@ footer.sticky-bottom {
   }
   .cv-grid-item {
     width: 300px;
+    height: 300px;
     margin-bottom: 10px;
   }
 
@@ -306,7 +319,7 @@ footer.sticky-bottom {
   }
   .cv-frame {
     position: relative; 
-    height: 100%; 
+    height: 60%; 
     width: 100%;
     pointer-events: none;
     border: 0;
@@ -319,9 +332,23 @@ footer.sticky-bottom {
 
 
 // Publications
+ol.bibliography {list-style-type: none;}
+ol.bibliography > li:before{
+  content: "[" counter(bibitem) "]";
+    position: absolute;
+    padding-top: 26px;
+    padding-left: 26px;
+}
+ol.bibliography > li {counter-increment: bibitem -1;} 
 
-// Publications
 .type {
+  color: $grey-color-mid;
+  border-bottom: 1px solid $grey-color-light;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+.year {
   color: $grey-color-mid;
   border-bottom: 1px solid $grey-color-light;
   margin-top: 2rem;
