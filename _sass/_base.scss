@@ -213,8 +213,10 @@ a, table.table a {
   .contact-icon {
     font-size: 2rem;
     a {
+      color: var(--global-icon-color);
       &:hover {
-        color: var(--global-hover-color);
+        color: var(--global-theme-color);
+        text-shadow: 0 0 3px #000;
       }
     }
   }
@@ -261,16 +263,16 @@ a, table.table a {
 .news table td {
   font-size: 1rem;
   color: var(--global-text-color);
+  .news-title {
+    color: $red-color-dark;
+    a {
+      color: $red-color-dark;
+    }
+  }
 }
 
 .news table th {
   color: var(--global-text-color);
-  .news-title {
-    color: $red-color-dark;
-  }
-  a {
-    color: $red-color-dark;
-  }
 }
 
 // bibliography header
@@ -325,9 +327,9 @@ footer.fixed-bottom {
     text-align: center;
   }
   a {
-    color: var(--global-footer-link-color);
+    color: white;
     &:hover {
-      color: pink;
+      color: gray;
       text-decoration: none;
     }
   }
@@ -457,23 +459,16 @@ footer.sticky-bottom {
   ol.bibliography > li {counter-increment: bibitem -1;} 
 }
 
+.new-strong {
+  font-weight: bold;
+  font-size: large;
+  background-color: $red-color-dark;
+  color: white;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
 
-
-.publications {
-  margin-top: 2rem;
-  h1 {
-    color: $grey-color-mid;
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  h2 {
-    margin-bottom: 1rem;
-    span {
-      font-size: 1.5rem;
-    }
-  }
+  
   h2.year {
     color: $grey-color-mid;
     border-top: 1px solid $grey-color-light;
@@ -493,15 +488,9 @@ footer.sticky-bottom {
     margin-bottom: 2rem;
     text-align: right;
   }
-  
-  .new-strong {
-    font-weight: bold;
-    font-size: large;
-    background-color: $red-color-dark;
-    color: white;
-    border-radius: 3px;
-    padding: 2px 5px;
-  }
+
+.publications {
+  margin-top: 2rem;
   ol.bibliography {
     list-style: none;
     padding: 0;
