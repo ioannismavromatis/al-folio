@@ -109,7 +109,8 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ['_pages']
+include:
+  - _pages
 exclude:
   - bin
   - README.md
@@ -120,8 +121,14 @@ exclude:
   - _posts
   - CONTRIBUTING.md
   - Makefile
+  - assets/img
 keep_files:
   - .git
+  - CNAME
+  - README.md
+  - assets/img/favicon.ico
+  - assets/img/phdImage.jpeg
+  - assets/img/prof_pic.jpg
 
 # Plug-ins
 plugins:
