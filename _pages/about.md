@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 description: >
-      Research Engineer | <a href="https://www.toshiba.eu/pages/eu/Bristol-Research-and-Innovation-Laboratory/">Bristol Research and Innovation Laboratory</a> | <a href="https://www.toshiba.eu">Toshiba Europe Ltd.</a>
+      Senior Research Engineer | <a href="https://www.toshiba.eu/pages/eu/Bristol-Research-and-Innovation-Laboratory/">Bristol Research and Innovation Laboratory</a> | <a href="https://www.toshiba.eu">Toshiba Europe Ltd.</a>
 
 profile:
   align: left
@@ -20,7 +20,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 
 ---
-I am a Research Engineer, working for Toshiba Europe Ltd. Currently, I am the lead back-end architect of the UMBRELLA testbed that will support a 250+ node IoT testbed deployed in the northern Bristol, UK.
+I am a Senior Research Engineer, working for Toshiba Europe Ltd. Currently, I am the lead back-end architect of the UMBRELLA testbed that will support a 250+ node IoT testbed deployed in the northern Bristol, UK.
 
 #### Research Interests:
 My areas of interest span around Connected and Autonomous Vehicles (CAVs), Cooperative Intelligent Transportation Systems (C-ITSs), and 5G Wireless Communications. Lately, I developed particular interest in Cloud-native technologies and Serverless Architectures, on Cybersecurity for Industrial Control Systems, and Digital Twins.
