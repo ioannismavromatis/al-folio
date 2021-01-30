@@ -1,7 +1,9 @@
 _site
+.bundle
 .sass-cache
 .jekyll-metadata
 .DS_store
 .ruby-version
-Gemfile.lock
 .tweet-cache/
+Gemfile.lock
+vendor

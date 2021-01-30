@@ -111,6 +111,10 @@
 
 // Typography
 
+p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
+  color: var(--global-text-color);
+}
+
 a, table.table a {
   color: var(--global-theme-color);
   &:hover {
@@ -168,9 +172,9 @@ a, table.table a {
 
 .post-description {
   margin-bottom: 2rem;
+  font-size: 0.875rem;
   a {
     color: inherit;
-    font-size: 0.875rem;
     &:hover {
       color: var(--global-theme-color);
       text-decoration: none;
@@ -198,6 +202,7 @@ a, table.table a {
     color: var(--global-text-color);
   }
   .navbar-nav .nav-item .nav-link {
+    color: var(--global-text-color);
     &:hover {
       color: var(--global-link-hover-color);
     }
@@ -227,7 +232,7 @@ a, table.table a {
     display: block;
     width: 22px;
     height: 2px;
-    background-color: $grey-color-dark;
+    background-color: var(--global-icon-color);
     border-radius: 1px;
     margin-bottom: 4px;
     transition: all 0.2s;
@@ -318,10 +323,10 @@ a, table.table a {
 
 // Footer
 footer.fixed-bottom {
-  color: var(--global-footer-text-color);
   background-color: var(--global-footer-bg-color);
   font-size: 0.8rem;
   .container {
+    color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
     text-align: center;
@@ -392,10 +397,20 @@ footer.sticky-bottom {
   }
 }
 
-.pagination .page-item.active .page-link {
-  background-color: var(--global-theme-color);
-  &:hover {
-    background-color: var(--global-theme-color);
+.pagination {
+  .page-item {
+    .page-link {
+      color: var(--global-text-color);
+      &:hover {
+        color: $black-color;
+      }
+    }
+    &.active .page-link {
+      background-color: var(--global-theme-color);
+      &:hover {
+        background-color: var(--global-theme-color);
+      }
+    }
   }
 }
 
