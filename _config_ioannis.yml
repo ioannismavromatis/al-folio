@@ -27,6 +27,9 @@ navbar_fixed: true
 footer_fixed: true
 # TODO: add layout settings (single page vs. multi-page)
 
+# Dimensions
+max_width: 800px
+
 # -----------------------------------------------------------------------------
 # Open Graph
 # -----------------------------------------------------------------------------
