@@ -44,6 +44,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 github_username: ioannismavromatis # your GitHub user name
+gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 linkedin_username: ioanmavromatis # your LinkedIn user name
 scholar_userid: JC7uWT8AAAAJ&hl # your Google Scholar ID
@@ -53,10 +54,14 @@ quora_username: # your Quora username
 publons_id: # your ID on Publons
 research_gate_profile: Ioannis_Mavromatis3 # your profile on ResearchGate
 blogger_url: # your blogger URL
+work_url: # work page URL
+keybase_username: # your keybase user name
+wikidata_id: # your wikidata id
 
 contact_note: >
 
 google_analytics: UA-180764112-1 # out your google-analytics code
+panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -175,12 +180,13 @@ scholar:
 # -----------------------------------------------------------------------------
 
 enable_google_analytics:  true
+enable_panelbear_analytics: false
 enable_mansory:           true
 enable_math:              true
 enable_progressbar:       true
 enable_tooltips:          false
 enable_darkmode:          false
-show_social_icons:        true
+enable_navbar_social:     true
 
 # -----------------------------------------------------------------------------
 # Library versions
