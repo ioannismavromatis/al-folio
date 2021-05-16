@@ -653,7 +653,7 @@ footer.sticky-bottom {
       .bibtex.hidden.open {
         font-family: monospace;
         border-color: $grey-color;
-        white-space: pre-wrap;
+        white-space: nowrap;
       }
 
     }
