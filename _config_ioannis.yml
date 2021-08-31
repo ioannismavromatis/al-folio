@@ -94,6 +94,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  datasets:
+    output: true
+    permalink: /datasets/:path/
   publications:
     output: true
     permalink: /publications/:path/

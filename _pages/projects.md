@@ -16,7 +16,7 @@ post-header: false
   {% assign sorted_projects = site.projects | sort: "year" | reverse %}
   {% for project in sorted_projects %}    
 
-  <div class="card mb-3 hoverable card-horizontal" role="button">
+  <div class="card card-project mb-3 hoverable card-horizontal" role="button">
     <div class="row no-gutters ">
       <div class="col-md-4">
         {% if project.img %}
