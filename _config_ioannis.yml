@@ -16,8 +16,9 @@ footer_text: >
   Pages</a>.
 
 url:  # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/
+baseurl: /  # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
+impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -25,10 +26,11 @@ last_updated: true # set to true if you want to display last updated in the foot
 
 navbar_fixed: true
 footer_fixed: true
-# TODO: add layout settings (single page vs. multi-page)
 
 # Dimensions
 max_width: 800px
+
+# TODO: add layout settings (single page vs. multi-page)
 
 # -----------------------------------------------------------------------------
 # Open Graph
@@ -57,6 +59,7 @@ blogger_url: # your blogger URL
 work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
+dblp_url: https://dblp.org/pid/195/6027.html # your DBLP profile url
 
 contact_note: >
 
@@ -142,9 +145,11 @@ keep_files:
 plugins:
   - jekyll-email-protect
   - jekyll-github-metadata
+  - jekyll-feed
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-twitter-plugin
+  - jekyll-sitemap
   - jemoji
   - bootstrap
   - material-sass
@@ -179,14 +184,20 @@ scholar:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:  true
-enable_panelbear_analytics: false
-enable_mansory:           true
-enable_math:              true
-enable_progressbar:       true
-enable_tooltips:          false
-enable_darkmode:          false
-enable_navbar_social:     true
+enable_google_analytics:    true   # enables google analytics
+enable_panelbear_analytics: false  # enables panelbear analytics
+enable_mansory:             true   # enables automatic project cards arangement
+enable_math:                true   # enables math typesetting (uses MathJax)
+enable_progressbar:         true
+enable_tooltips:            false  # enables automatic tooltip links generated
+                                   # for each section titles on pages and posts
+enable_darkmode:            false  # enables switching between light/dark modes
+enable_navbar_social:       true   # enables displaying social links in the
+                                   # navbar on the about page
+enable_project_categories:  false  # enables categorization of projects into
+                                   # multiple categories
+enable_medium_zoom:         false   # enables image zoom feature (as on medium.com)
+
 
 # -----------------------------------------------------------------------------
 # Library versions
@@ -207,7 +218,7 @@ jquery:
   version: "3.5.1"
   integrity: "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
 mathjax:
-  version: "3.1.2"
+  version: "3.2.0"
 mansory:
   version: "4.2.2"
   integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
@@ -219,3 +230,6 @@ mdb:
 popper:
   version: "2.4.4"
   integrity: "sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A=="
+medium_zoom:
+  version: "1.0.6"
+  integrity: "sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM="
