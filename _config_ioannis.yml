@@ -15,7 +15,7 @@ footer_text: >
   Hosted on <a href="https://pages.github.com/" target="_blank">GitHub
   Pages</a>.
 
-url:  # the base hostname & protocol for your site
+url: "https://ioannismavromatis.com"  # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -103,6 +103,16 @@ collections:
 
 news_limit: 7
 publications_url: /publications/type
+
+# -----------------------------------------------------------------------------
+# Control the sitemap information
+# -----------------------------------------------------------------------------
+defaults:
+  -
+    scope:
+      path:            "assets/**/*.pdf"
+    values:
+      sitemap:         false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

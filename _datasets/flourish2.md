@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: FLOURISH Car Trials Dataset 2
 description: A large-scale dataset of ETSI ITS-G5 DSRC measurements
 year: 2019

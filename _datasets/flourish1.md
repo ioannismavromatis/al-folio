@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: FLOURISH Car Trials Dataset 1
 description: A dataset of ~50M exchanged CAMs 
 year: 2017
