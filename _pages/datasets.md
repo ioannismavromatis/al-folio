@@ -21,7 +21,7 @@ post-header: false
     <div class="row no-gutters ">
       <div class="col-md-4">
         {% if dataset.img %}
-        <img class="card-img" src="/assets/projects/{{ project.img | relative_url }}" alt="project thumbnail">
+        <img class="card-img" src="/assets/projects{{ project.img | relative_url }}" alt="project thumbnail">
         {% endif %}
       </div>
       <div class="card-body">

@@ -1,6 +1,22 @@
 ---
 ---
 
+@inproceedings{data2021,
+    author={  {Pope}, J. and {Raimondo}, F. and {Kumar}, V and {McConville}, R. and {Piechocki}, R. and {Oikonomou}, G. and {Pasquier}, T. and {Luo}, B. and {Howarth}, D. and {Mavromatis}, I. and {Carnelli}, P. and {Sanchez-Mompo}, A. and {Spyridopoulos}, T. and {Khan}, A.},
+    title = {Dataset: Container Escape Detection for Edge Devices},
+    booktitle={Proc. of ACM SenSys '21},
+    year = {2021},
+    month={November},
+    abstract={Edge computing is rapidly changing the IoT-Cloud landscape. Various testbeds are now able to run multiple Docker-like containers developed and deployed by end-users on edge devices. However, this capability may allow an attacker to deploy a malicious container on the host and compromise it. This paper presents a dataset based on the Linux Auditing System, which contains malicious and benign container activity. We developed two malicious scenarios, a denial of service and a privilege escalation attack, where an adversary uses a container to compromise the edge device. Furthermore, we deployed benign user containers to run in parallel with the malicious containers. Container activity can be captured through the host system via system calls. Our time series auditd dataset contains partial labels for the benign and malicious related system calls. Generating the dataset is largely automated using a provided AutoCES framework. We also present a semi-supervised machine learning use case with the collected data to demonstrate its utility. The dataset and framework code are open-source and publicly available.},
+    doi={10.1145/3485730.3494114},
+    isbn={9781450390972},
+    address={Coimbra, Portugal},
+    keywords={Container Escape, Cybersecurity, Anomaly Detection, Datasets},
+    html={https://dl.acm.org/doi/10.1145/3485730.3494114},
+    code={https://github.com/jpope8/container-escape-dataset/tree/main},
+    pdf={data2021.pdf}
+}
+
 @inproceedings{umbrellaRobot,
     author={{Farnham}, T. D. and {Jones}, S. and {Aijaz}, A. and {Jin}, Y. and {Mavromatis}, I. and {Raza}, U. and {Portelli}, A. and {Stanoev}, A. and {Sooriyabandara}, M.},
     title={UMBRELLA Collaborative Robotics Testbed and IoT Platform},
@@ -9,7 +25,6 @@
     month={January},
     abstract={This paper provides details of the collaborative robotics testbed platform that has been developed within the UMBRELLA project. The testbed is part of a larger open Industrial IoT testbed which is currently being deployed in the UK. The aim of the testbed is to permit flexible experimentation using different end devices (including smart city sensing and robot nodes) to evaluate algorithms or new practical application scenarios. For the collaborative robotics testbed this relates to warehouse robotics, which can move pallets of different sizes and shapes. The testbed also includes simulator facilities for validation of algorithms prior to deployment on the robot nodes. The nodes support a rich set of sensors, actuators, and wireless communication technologies. The software architecture is based on Docker containers and ROS2 DDS middleware for flexible and extensible evolution to support future sensors or network technologies. This will be provided as an open testbed to support research, experimentation and evaluation of swarm robotics and other Industrial IoT use-cases.},
     doi={10.1109/CCNC49032.2021.9369615},
-    month={January},
     isbn={978-1-7281-9794-4},
     address={Las Vegas, NV, USA},
     keywords={Swarm robotics,Testbed,IoT Platform},
@@ -135,6 +150,7 @@
     doi={10.1049/ic.2017.0023},
     month={February},
     address={Birmingham, UK},
+    note={Invited Paper},
     html={https://ieeexplore.ieee.org/document/8277251},
     pdf={beamAlignment.pdf}
 }
