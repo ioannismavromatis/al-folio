@@ -186,16 +186,16 @@ plugins:
 # Jekyll Archives
 # -----------------------------------------------------------------------------
 
-jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them). 
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
+# jekyll-archives:
+#   enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them). 
+#   layouts:
+#     year: archive-year
+#     tag: archive-tag
+#     category: archive-category
+#   permalinks:
+#     year: '/blog/:year/'
+#     tag: '/blog/tag/:name/'
+#     category: '/blog/category/:name/'
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -227,17 +227,17 @@ scholar:
 # Jekyll Responsive Images
 # -----------------------------------------------------------------------------
 
-responsive_image:
-  template: _includes/responsive_img.html
-  # Quality to use when resizing images.
-  default_quality: 80
-  sizes:
-    - width: 480
-    - width: 800
-    - width: 1400
-      quality: 90
-  # Strip EXIF and other JPEG profiles. Helps to minimize JPEG size.
-  strip: true
+# responsive_image:
+#   template: _includes/responsive_img.html
+#   # Quality to use when resizing images.
+#   default_quality: 80
+#   sizes:
+#     - width: 480
+#     - width: 800
+#     - width: 1400
+#       quality: 90
+#   # Strip EXIF and other JPEG profiles. Helps to minimize JPEG size.
+#   strip: true
 
 
 # -----------------------------------------------------------------------------
