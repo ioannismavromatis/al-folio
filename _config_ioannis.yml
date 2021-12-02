@@ -69,7 +69,7 @@ wikidata_id: # your wikidata id
 dblp_url: https://dblp.org/pid/195/6027.html # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
-rss_icon: true
+rss_icon: false
 
 contact_note: >
 
