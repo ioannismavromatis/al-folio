@@ -64,14 +64,30 @@ layout: default
         <span class="periodical">
         {% if entry.type == "article" %}
           <em>{{entry.journal}},</em>
+          {% if entry.year %}
+            {{entry.year}}
+          {% endif %}
         {% elsif entry.type == "inproceedings" %}
           <em>In {{entry.booktitle}},</em>
+          {% if entry.month %}
+            {% if entry.month == "may" %}
+              May
+            {% else %}
+              {{entry.month | capitalize}}.
+            {% endif %}    
+          {% endif %}
+          {% if entry.year %}
+            {{entry.year}},
+          {% endif %}
+          {% if entry.address %}
+            {{entry.address}}
+          {% endif %}  
         {% elsif entry.type == "book" %}
           <em>In {{entry.booktitle}},</em>
+          {% if entry.year %}
+            {{entry.year}}
+          {% endif %}
         {% endif %}  
-        {% if entry.year %}
-          {{entry.year}}
-        {% endif %}
         </span>
       {% endif %}
 
