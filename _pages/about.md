@@ -15,7 +15,7 @@ profile:
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 
 ---
 I am a Principal Research Engineer, working for Toshiba Europe Ltd. Currently, I am the lead back-end architect of the UMBRELLA testbed that will support a 250+ node IoT testbed deployed in the northern Bristol, UK.

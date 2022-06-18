@@ -19,7 +19,7 @@ lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: assets/img/favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://ioannismavromatis.com # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/
+baseurl: # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -72,7 +72,7 @@ wikidata_id: # your wikidata id
 dblp_url: https://dblp.org/pid/195/6027.html # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
-contact_note: 
+contact_note:
 
 google_analytics: UA-180764112-1 # your google-analytics ID (format: UA-XXXXXXXXX)
 google_site_verification: # your google-site-verification ID (Google Search Console)
@@ -84,8 +84,8 @@ panelbear_analytics: # panelbear analytics site ID (format: XXXXXXXXX)
 # -----------------------------------------------------------------------------
 
 blog_name: # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: 
+blog_nav_title: # your blog must have a title for it to be displayed in the nav bar
+blog_description:
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -93,7 +93,7 @@ pagination:
   enabled: false
 
 # Comments
-disqus_shortname:  # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -255,7 +255,7 @@ filtered_bibtex_keywords: [
     poster,
     slides,
     website,
-    notes
+    notes,
   ] # Filter out certain bibtex entry keywords used internally from the bib output
 
 # -----------------------------------------------------------------------------
@@ -283,8 +283,8 @@ imagemagick:
 # -----------------------------------------------------------------------------
 
 # jekyll-diagrams:
-  # configuration, see https://github.com/zhustec/jekyll-diagrams.
-  # feel free to comment out this section if not using jekyll diagrams.
+# configuration, see https://github.com/zhustec/jekyll-diagrams.
+# feel free to comment out this section if not using jekyll diagrams.
 
 # -----------------------------------------------------------------------------
 # Optional Features
