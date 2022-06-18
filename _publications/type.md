@@ -26,8 +26,8 @@ bibtypes:
   {% endcapture %}
 
   <div style="counter-reset:bibitem {{ category_counter | plus:1 }}">
-  <h2 class="type">{{bibtype.text}}</h2>
   <div class="publications">
+  <h2 class="type">{{bibtype.text}}</h2>
     {% bibliography -f {{site.scholar.bibliography}} -q {{bibtype.bibquery}} %}
   </div>
 

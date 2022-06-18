@@ -255,7 +255,7 @@ filtered_bibtex_keywords: [
     poster,
     slides,
     website,
-    notes,
+    note,
   ] # Filter out certain bibtex entry keywords used internally from the bib output
 
 # -----------------------------------------------------------------------------

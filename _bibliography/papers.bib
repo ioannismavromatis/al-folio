@@ -4,20 +4,22 @@
 @inproceedings{umbrellawireless2022,
     author={  {Mavromatis}, I. and {Stanoev}, A. and {Portelli}, A. J. and {Lockie}, C. and {Ammann}, M. and {Jin}, Y. and {Sooriyabandara}, M.},
     title = {Reliable IoT Firmware Updates: A Large-scale Mesh Network Performance Investigation},
-    booktitle={Proc. of IEEE WCNC '22},
+    booktitle={Proc. of IEEE Wireless Communications and Networking Conference (WCNC) '22},
     year = {2022},
     month={April},
     abstract={Internet of Things (IoT) networks require regular firmware updates to ensure enhanced security and stability. As we move towards methodologies of codifying security and policy decisions and exchanging them over IoT large-scale deployments (security-as-a-code), these demands should be considered a routine operation. However, rolling out firmware updates to large-scale networks presents a crucial challenge for constrained wireless environments with large numbers of IoT devices. This paper initially investigates how the current state-of-the-art protocols operate in such adverse conditions by measuring various Quality-of-Service (QoS) Key Performance Indicators (KPIs) of the shared wireless medium. We later discuss how Concurrent Transmissions (CT) can extend the scalability of IoT protocols and ensure reliable firmware roll-outs over large geographical areas. Measuring KPIs such as the mesh join time, the throughput, and the number of nodes forming a network, we provide great insight into how an IoT environment will behave under a large-scale firmware roll-out. Finally, we conducted our performance investigation over the UMBRELLA platform, a real-world IoT testbed deployed in Bristol, UK. This ensures our findings represent a realistic IoT scenario and meet the strict QoS requirements of today's IoT applications. },
     isbn={},
+    doi={10.1109/WCNC51071.2022.9771708},
     address={Austin, Texas},
     keywords={IoT, Bluetooth, Large-scale Testbed, Firmware Update, IEEE 802.15.4},
-    pdf={umbrellawireless.pdf}
+    pdf={umbrellawireless.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{data2021,
     author={  {Pope}, J. and {Raimondo}, F. and {Kumar}, V and {McConville}, R. and {Piechocki}, R. and {Oikonomou}, G. and {Pasquier}, T. and {Luo}, B. and {Howarth}, D. and {Mavromatis}, I. and {Carnelli}, P. and {Sanchez-Mompo}, A. and {Spyridopoulos}, T. and {Khan}, A.},
     title = {Dataset: Container Escape Detection for Edge Devices},
-    booktitle={Proc. of ACM SenSys '21},
+    booktitle={Proc. of ACM Embedded Networked Sensor Systems (SenSys) '21},
     year = {2021},
     month={November},
     abstract={Edge computing is rapidly changing the IoT-Cloud landscape. Various testbeds are now able to run multiple Docker-like containers developed and deployed by end-users on edge devices. However, this capability may allow an attacker to deploy a malicious container on the host and compromise it. This paper presents a dataset based on the Linux Auditing System, which contains malicious and benign container activity. We developed two malicious scenarios, a denial of service and a privilege escalation attack, where an adversary uses a container to compromise the edge device. Furthermore, we deployed benign user containers to run in parallel with the malicious containers. Container activity can be captured through the host system via system calls. Our time series auditd dataset contains partial labels for the benign and malicious related system calls. Generating the dataset is largely automated using a provided AutoCES framework. We also present a semi-supervised machine learning use case with the collected data to demonstrate its utility. The dataset and framework code are open-source and publicly available.},
@@ -27,7 +29,8 @@
     keywords={Container Escape, Cybersecurity, Anomaly Detection, Datasets},
     html={https://dl.acm.org/doi/10.1145/3485730.3494114},
     code={https://github.com/jpope8/container-escape-dataset/tree/main},
-    pdf={data2021.pdf}
+    pdf={data2021.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{umbrellaRobot,
@@ -42,6 +45,7 @@
     address={Las Vegas, NV, USA},
     keywords={Swarm robotics,Testbed,IoT Platform},
     pdf={umbrellaRobot.pdf},
+    bibtex_show=true
 }
 
 @article{multiRadio,
@@ -57,6 +61,7 @@
     pdf={multiRadio.pdf},
     note={Invited Paper},
     html={http://dx.doi.org/10.4108/eai.20-3-2018.154368},
+    bibtex_show=true
 }
 
 @inproceedings{cityScaleITSG5,
@@ -72,7 +77,8 @@
     month={August},
     address={Saint-Malo, France},
     html={https://link.springer.com/chapter/10.1007/978-3-030-00247-3_5},
-    pdf={cityScaleITSG5.pdf}
+    pdf={cityScaleITSG5.pdf},
+    bibtex_show=true
 }
 
 @article{datasetITSG5,
@@ -89,7 +95,8 @@
     keywords={ITS-G5, DSRC, RSSI, V2V, V2I, V2X, CAM},
     abstract={A dataset of measurements of ETSI ITS-G5 Dedicated Short Range Communications (DSRC) is presented. Our dataset consists of network interactions happening between two On-Board Units (OBUs) and four Road Side Units (RSUs). Each OBU was fitted onto a vehicle driven across the FLOURISH Test Track in Bristol, UK. Each RSU and OBU was equipped with two transceivers operating at different frequencies. During our experiments, each transceiver broadcasts Cooperative Awareness Messages (CAMs) over the licensed DSRC band, and over the unlicensed Industrial, Scientific, and Medical radio (ISM) bands 2.4 GHz-2.5 GHz and 5.725 GHz-5.875 GHz. Each transmitted and received CAM is logged along with its Received Signal Strength Indicator (RSSI) value and accurate positioning information. The Media Access Control layer (MAC) layer Packet Delivery Rates (PDRs) and RSSI values are also empirically calculated across the whole length of the track for any transceiver. The dataset can be used to derive realistic approximations of the PDR as a function of RSSI values under urban environments and for both the DSRC and ISM bands – thus, the dataset is suitable to calibrate (simplified) physical layers of full-stack vehicular simulators where the MAC layer PDR is a direct function of the RSSI. The dataset is not intended to be used for signal propagation modelling. The dataset can be found at https://doi.org/10.5523/bris.eupowp7h3jl525yxhm3521f57, and it has been analyzed in the following paper: I. Mavromatis, A. Tassi, and R. J. Piechocki, “Operating ITS-G5 DSRC over Unlicensed Bands: A City-Scale Performance Evaluation,” IEEE PIMRC 2019. [Online]. Available: https://arxiv.org/abs/1904.00464.},
     code={https://github.com/ioannismavromatis/ITS-G5_trials},
-    pdf={datasetITSG5.pdf}
+    pdf={datasetITSG5.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{driveSimulator,
@@ -103,7 +110,8 @@
     keywords={C-ITS, CAV, Digital Twin, Simulation Framework, SUMO, Urban Mobility},
     address={Rennes, France},
     code={https://github.com/ioannismavromatis/DRIVE_Simulator},
-    pdf={driveSimulator.pdf}
+    pdf={driveSimulator.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{secureOffloading,
@@ -117,7 +125,8 @@
     month={April},
     address={Kuala Lumpur, Malaysia},
     html={https://ieeexplore.ieee.org/document/8746698},
-    pdf={secureOffloading.pdf}
+    pdf={secureOffloading.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{parallelOmnet,  
@@ -133,7 +142,8 @@
     note={IEEE Popularity Award},
     html={https://ieeexplore.ieee.org/document/8628429},
     code={https://github.com/ioannismavromatis/multithread-inet},
-    pdf={parallelOmnet.pdf}
+    pdf={parallelOmnet.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{agileCalibration,
@@ -149,7 +159,8 @@
     month={November},
     address={Torino, Italy},
     html={https://ieeexplore.ieee.org/document/8275604},
-    pdf={agileCalibration.pdf}
+    pdf={agileCalibration.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{beamAlignment,
@@ -165,7 +176,8 @@
     address={Birmingham, UK},
     note={Invited Paper},
     html={https://ieeexplore.ieee.org/document/8277251},
-    pdf={beamAlignment.pdf}
+    pdf={beamAlignment.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{efficientV2V,
@@ -181,7 +193,8 @@
     month={May},
     address={Kansas, USA},
     html={https://ieeexplore.ieee.org/document/8403780},
-    pdf={efficientV2V.pdf}
+    pdf={efficientV2V.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{anomaliesDetection,
@@ -196,7 +209,8 @@
     month={September},
     address={Hawaii, USA},
     html={https://ieeexplore.ieee.org/document/8887778},
-    pdf={anomaliesDetection.pdf}
+    pdf={anomaliesDetection.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{agileOffloading,
@@ -213,7 +227,8 @@
     note={IEEE Best Paper Award},
     address={Kuala Lumpur, Malaysia},
     html={https://ieeexplore.ieee.org/document/8746302},
-    pdf={agileOffloading.pdf}
+    pdf={agileOffloading.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{urbanTrafficFlow,
@@ -230,7 +245,8 @@
     address={Antwerp, Belgium},
     html={https://ieeexplore.ieee.org/document/9128758},
     code={https://github.com/ioannismavromatis/sumoCAVs},
-    pdf={urbanTrafficFlow.pdf}
+    pdf={urbanTrafficFlow.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{mmwaveInfrastructureITS,
@@ -246,7 +262,8 @@
     month={April},
     address={Kuala Lumpur, Malaysia},
     html={https://ieeexplore.ieee.org/document/8746518},
-    pdf={mmwaveInfrastructureITS.pdf}
+    pdf={mmwaveInfrastructureITS.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{macLayerBeamSteering,
@@ -262,7 +279,8 @@
     month={September},
     address={Toronto, Canada},
     html={https://ieeexplore.ieee.org/document/8288267},
-    pdf={macLayerBeamSteering.pdf}
+    pdf={macLayerBeamSteering.pdf},
+    bibtex_show=true
 }
 
 @inproceedings{itsg5Unlicensed,
@@ -278,7 +296,8 @@
     month={September},
     address={Istanbul, Turkey},
     html={https://ieeexplore.ieee.org/document/8904214},
-    pdf={itsg5Unlicensed.pdf}
+    pdf={itsg5Unlicensed.pdf},
+    bibtex_show=true
 }
 
 @book{qoeWireless,
@@ -291,7 +310,8 @@
     publisher={IGI Global},
     pages={6307-6317},
     month={December},
-    html={https://www.igi-global.com/chapter/studying-quality-of-experience-qoe-over-wireless-networks/113086}
+    html={https://www.igi-global.com/chapter/studying-quality-of-experience-qoe-over-wireless-networks/113086},
+    bibtex_show=true
 }
 
 @thesis{phdThesis,
@@ -301,7 +321,8 @@
     year={2018},
     month={October},
     html={https://www.dropbox.com/s/nbh0bi2ogh8721u/PhD_Thesis_final.pdf?dl=0},
-    pdf={phdThesis.pdf}
+    pdf={phdThesis.pdf},
+    bibtex_show=true
 }
 
 @thesis{mscThesis,
@@ -311,5 +332,6 @@
     year={2014},
     month={October},
     html={https://www.dropbox.com/s/kdrp1b8hbmigruw/Dissertation.pdf?dl=0},
-    pdf={mscDissertation.pdf}
+    pdf={mscDissertation.pdf},
+    bibtex_show=true
 }

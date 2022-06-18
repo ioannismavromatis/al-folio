@@ -18,15 +18,14 @@ social: true
 {% endcapture %}
 
 <div style="counter-reset:bibitem {{ paper_counter | plus:1 }}"></div>
+
 {% for y in (page.firstyear..yearnow) reversed %}
-{% capture papers_year %}{% bibliography_count -f {{site.scholar.bibliography}} -q @*[year={{y}}]* %}{% endcapture %}
-{% if papers_year != '0' %}  
-<h2 class="year">{{y}}</h2>
-<div class="publications">
-    {% bibliography -f {{site.scholar.bibliography}} -q @*[year={{y}}]* %}
+
+  {% capture papers_year %}{% bibliography_count -f {{site.scholar.bibliography}} -q @*[year={{y}}]* %}{% endcapture %}
+  {% if papers_year != '0' %}  
+  <div class="publications">
+    <h2 class="year">{{y}}</h2>
+        {% bibliography -f {{site.scholar.bibliography}} -q @*[year={{y}}]* %}
+  </div>
   {% endif %}
-
 {% endfor %}
-
-</div>
-

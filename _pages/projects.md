@@ -9,7 +9,7 @@ nav_order: 2
 ---
 <header class="post-header">
     <h1 class="post-title">Projects</h1>
-    <p class="post-description">A list of projects that I was involved throughout the years.</p>
+    <h2 class="post-description">A list of projects that I was involved throughout the years.</h2>
 </header>
 
 <div class="projects column">

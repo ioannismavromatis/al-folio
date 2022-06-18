@@ -1,11 +1,9 @@
-<div>Publications ordered by <b><i>{{page.sorting}}</i></b> in reverse chronological order.</div>
+<header class="post-header">
+    <h1 class="post-title">Publications</h1>
+</header>
 
-<div id="row">
-    <div class="block">Order by:</div>
-    <div class="block">
-        <a href="/publications/{{ page.pubtype }}" class="btn btn-sm btn-outline-dark" role="button" title="Type">
-            <span class="fas fa-sort"></span>
-            <span>{{ page.pubtype }}</span>
-        </a>
-    </div>
+<div class="bib-header">
+    <span style="display:block;" class="block">Publications ordered by <b><i>{{page.sorting}}</i></b> in reverse chronological order.</span>
+    <span class="block">Order by:</span>
+    <a href="/publications/{{ page.pubtype }}" class="fas fa-sort btn" role="button" title="Type"> {{ page.pubtype }}</a>
 </div>
