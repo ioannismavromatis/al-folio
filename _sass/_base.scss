@@ -342,7 +342,7 @@ blockquote {
 .social {
   text-align: center;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2.5rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -369,6 +369,7 @@ footer.fixed-bottom {
     color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
+    text-align: center;
   }
   a {
     color: var(--global-footer-link-color);
@@ -500,6 +501,12 @@ footer.sticky-bottom {
     margin-top: 2rem;
     margin-bottom: 1rem;
     text-align: right;
+  }
+  .cv-grid-item {
+    width: 400px;
+    height: 300px;
+    padding: 1em;
+    margin-bottom: 40px;
   }
 }
 
@@ -727,5 +734,18 @@ html.transition *:after {
       color: var(--global-theme-color);
       border-color: var(--global-theme-color);
     }
+  }
+}
+
+a.btn {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  &:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
   }
 }
