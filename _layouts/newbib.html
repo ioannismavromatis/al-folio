@@ -15,7 +15,25 @@
         <!-- Entry bib key -->
         <div id="{{entry.key}}" class="col-sm-10">
         {% if entry.type == "thesis" -%}
-          {{reference}}
+          <div style="font-size: 20px;" class="title">{{entry.title}}</div>
+          <div class="author">
+            {%- for author in entry.author_array -%}
+              {%- assign author_is_self = false -%} 
+              {%- if author.last == site.scholar.last_name%}
+                {%- if site.scholar.first_name contains author.first -%}
+                  {%- assign author_is_self = true -%}
+                {%- endif -%}
+              {%- endif -%}
+              {%- if author_is_self %}
+                <b>{{author.last}}, {{author.first}}</b>
+              {%- else -%}
+                {{author.last}}, {{author.first}}
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          <div class="periodical">
+            <em>{{entry.booktitle}}, </em>{{entry.year}}
+          </div>
         {%- else %}
           <!-- Title -->
           <div style="font-size: 20px;" class="title">{{entry.title}}</div>
