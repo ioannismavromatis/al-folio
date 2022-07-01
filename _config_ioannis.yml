@@ -29,7 +29,7 @@ impressum_path: # set to path to include impressum link in the footer, use the s
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -63,7 +63,7 @@ scholar_userid: JC7uWT8AAAAJ&hl # your Google Scholar ID
 orcid_id: 0000-0002-3309-132X # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
-publons_id: # your ID on Publons
+publons_id: GLT-4646-2022 # your ID on Publons
 research_gate_profile: Ioannis_Mavromatis3 # your profile on ResearchGate
 blogger_url: # your blogger URL
 work_url: # work page URL

@@ -126,10 +126,10 @@
             {% endif %}
           {% endif %}
           {%- if entry.pdf %}
-            {% if entry.pdf contains '://' -%}
-            <a href="{{ entry.pdf }}" title="Download PDF" class="fa fa-download btn z-depth-0" role="button"></a>
-            {%- else -%}
-            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" title="Download PDF" class="fa fa-download btn z-depth-0" role="button"></a>
+            <!-- {% if entry.pdf contains '://' -%} -->
+            <!-- <a href="{{ entry.pdf }}" title="Download PDF" class="fa fa-download btn z-depth-0" role="button"></a> -->
+            <!-- {%- else -%} -->
+            <a href="{{ entry.pdf | prepend: '/assets/pdf/publications/' | relative_url }}" title="Download PDF" class="fa fa-download btn z-depth-0" role="button"></a>
             {%- endif %}
           {%- else -%}
             <a href="{{ entry.pdf }}" title="PDF not Available" class="fa fa-download btn z-depth-0 disabled" role="button"></a>
