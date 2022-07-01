@@ -6,6 +6,9 @@ description:
 nav: true
 social: true
 nav_order: 2
+nav_order: 2
+# display_categories: [work, fun]
+horizontal: false
 ---
 <header class="post-header">
     <h1 class="post-title">Projects</h1>
