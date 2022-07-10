@@ -214,6 +214,8 @@ jekyll-minifier:
 #     tag: "/blog/tag/:name/"
 #     category: "/blog/category/:name/"
 
+# display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
+
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
@@ -257,14 +259,18 @@ filtered_bibtex_keywords: [
     slides,
     website,
     note,
+    preview,
   ] # Filter out certain bibtex entry keywords used internally from the bib output
+
+  # Maximum number of authors to be shown, other authors will be visible on hover, leave blank to show all authors
+  # max_author_limit: 3
 
 # -----------------------------------------------------------------------------
 # Responsive WebP Images
 # -----------------------------------------------------------------------------
 
 imagemagick:
-  enabled: false
+  enabled: false # enables responsive images for your site (recomended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800
@@ -293,7 +299,7 @@ imagemagick:
 
 enable_google_analytics: true # enables google analytics
 enable_panelbear_analytics: false # enables panelbear analytics
-enable_google_verification: false # enables google site verification
+enable_google_verification: true # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arangement
 enable_math: true # enables math typesetting (uses MathJax)
@@ -320,7 +326,7 @@ bootstrap:
   version: "4.6.1"
   integrity:
     css: "sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
-    js: "sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI="
+    js: "sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8="
 fontawesome:
   version: "5.15.4"
   integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
