@@ -11,6 +11,8 @@ social: true
 bibtypes:
   - bibquery: "@article"
     text: "Journals & Magazines"
+  - bibquery: "@patent"
+    text: "Patents"    
   - bibquery: "@inproceedings"
     text: "Conferences & Workshops"
   - bibquery: "@book"

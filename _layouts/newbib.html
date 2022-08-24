@@ -93,6 +93,8 @@
             {%- capture entrytype -%}<em>{{entry.journal}},</em>{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
             {%- capture entrytype -%}<em>In {{entry.booktitle}}</em>, {%- endcapture -%}
+          {%- elsif entry.type == "patent" -%}
+            {%- capture entrytype -%}<em>{{entry.location}}, {{entry.number}}</em>, {%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
@@ -135,6 +137,12 @@
               <a href="{{ entry.html }}"  title="Online Access" class="ai ai-semantic-scholar btn z-depth-0" role="button"></a>
             {% else %}
               <a href="{{ entry.html }}"  title="Not Available Online" class="ai ai-semantic-scholar btn z-depth-0 disabled" role="button"></a>
+            {%- endif %}
+          {% elsif entry.type == "patent" %}
+            {%- if entry.url %}
+              <a href="{{ entry.url }}"  title="Online Access" class="ai ai-semantic-scholar btn z-depth-0" role="button"></a>
+            {% else %}
+              <a href="{{ entry.url }}"  title="Not Available Online" class="ai ai-semantic-scholar btn z-depth-0 disabled" role="button"></a>
             {%- endif %}
           {% else %}
             {% if entry.doi %}
@@ -184,8 +192,8 @@
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn z-depth-0" role="button">Website</a>
           {%- endif %}
-          {% if entry.note %} 
-            <strong class="new-strong">{{ entry.note }}</strong> 
+          {% if entry.highlight %} 
+            <strong class="new-strong">{{ entry.highlight }}</strong> 
           {% endif %}
           </div>
 
