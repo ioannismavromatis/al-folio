@@ -7,7 +7,7 @@ subtitle: Principal Research Engineer | <a href="https://www.toshiba.eu/pages/eu
 profile:
   align: right
   image: prof_pic.jpg
-  image_cicular: false # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   address: >
     <p>Bristol Research and</p>
     <p>Innovation Laboratory,</p>
