@@ -37,7 +37,7 @@ jobs:
           # Email for the git commit
           user_email: "ioan.mavromatis@gmail.com"
           # GitHub username for the commit
-          user_name: "Ioannis Mavromatis"
+          user_name: "ioannismavromatis"
           # branch to push folder to, defaults to master
           destination_branch: "master"
           # The commit message
