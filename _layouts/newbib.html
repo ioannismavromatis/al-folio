@@ -122,9 +122,6 @@
             <a class="abstract fa fa-font btn z-depth-0 disabled" title="Show Abstract" role="button"></a>
           {%- endif %}
 
-          {%- if entry.arxiv %}
-            <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn z-depth-0" role="button">arXiv</a>
-          {%- endif %}
           {%- if entry.bibtex_show %}
             <a title="Bibtex (Show/hide)" class="bibtex fa fa-book btn z-depth-0" role="button"></a>
           {% else %}
@@ -135,18 +132,24 @@
           {% if entry.type == "thesis" %}
             {%- if entry.html %}
               <a href="{{ entry.html }}"  title="Online Access" class="ai ai-semantic-scholar btn z-depth-0" role="button"></a>
+            {% elsif entry.arxiv %}
+              <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="ai ai-acclaim btn z-depth-0" role="button"></a>
             {% else %}
               <a href="{{ entry.html }}"  title="Not Available Online" class="ai ai-semantic-scholar btn z-depth-0 disabled" role="button"></a>
             {%- endif %}
           {% elsif entry.type == "patent" %}
             {%- if entry.url %}
               <a href="{{ entry.url }}"  title="Online Access" class="ai ai-semantic-scholar btn z-depth-0" role="button"></a>
+            {% elsif entry.arxiv %}
+              <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="ai ai-acclaim btn z-depth-0" role="button"></a>
             {% else %}
               <a href="{{ entry.url }}"  title="Not Available Online" class="ai ai-semantic-scholar btn z-depth-0 disabled" role="button"></a>
             {%- endif %}
           {% else %}
             {% if entry.doi %}
               <a href="{{ entry.html }}"  title="DOI" class="ai ai-doi btn z-depth-0" role="button"></a>
+            {% elsif entry.arxiv %}
+              <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="ai ai-acclaim btn z-depth-0" role="button"></a>
             {% else %}
               <a href="{{ entry.html }}"  title="DOI not Available" class="ai ai-doi btn z-depth-0 disabled" role="button"></a>
             {% endif %}

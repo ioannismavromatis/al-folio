@@ -260,8 +260,8 @@ filtered_bibtex_keywords: [
     poster,
     slides,
     website,
-    note,
     preview,
+    highlight
   ] # Filter out certain bibtex entry keywords used internally from the bib output
 
   # Maximum number of authors to be shown, other authors will be visible on hover, leave blank to show all authors
