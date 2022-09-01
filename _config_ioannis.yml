@@ -228,6 +228,8 @@ scholar:
 
   style: ieee
   locale: en
+  sort_by: year,month
+  order: descending
 
   source: /_bibliography/
   bibliography: papers.bib
@@ -246,7 +248,8 @@ scholar:
 
   query: "@*"
 
-filtered_bibtex_keywords: [
+filtered_bibtex_keywords:
+  [
     abbr,
     abstract,
     arxiv,
@@ -261,8 +264,9 @@ filtered_bibtex_keywords: [
     slides,
     website,
     preview,
-    highlight
+    highlight,
   ] # Filter out certain bibtex entry keywords used internally from the bib output
+
 
   # Maximum number of authors to be shown, other authors will be visible on hover, leave blank to show all authors
   # max_author_limit: 3
