@@ -41,7 +41,7 @@ jobs:
           # branch to push folder to, defaults to master
           destination_branch: "master"
           # The commit message
-          commit_msg: "Updating website after new commit"
+          commit_msg: "Updating website after commit ${{ github.head_ref }}.${{ github.sha }}"
 
   # # Deployment job
   # deploy:
