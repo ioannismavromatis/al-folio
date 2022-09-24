@@ -60,6 +60,7 @@ gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 linkedin_username: ioanmavromatis # your LinkedIn user name
 scholar_userid: JC7uWT8AAAAJ&hl # your Google Scholar ID
+semanticscholar_id: # your Semantic Scholar ID
 orcid_id: 0000-0002-3309-132X # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -70,9 +71,21 @@ work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 dblp_url: https://dblp.org/pid/195/6027.html # your DBLP profile url
-stackoverflow_id: #your stackoverflow id
+stackoverflow_id: # your stackoverflow id
+kaggle_id: # your kaggle id
+lastfm_id: # your lastfm id
+spotify_id: # your spotify id
+pinterest_id: # your pinterest id
+unsplash_id: # your unsplash id
+instagram_id: # your instagram id
+facebook_id: # your facebook id
+discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note:
+
+# -----------------------------------------------------------------------------
+# Analytics and search engine verification
+# -----------------------------------------------------------------------------
 
 google_analytics: UA-180764112-1 # your google-analytics ID (format: UA-XXXXXXXXX)
 google_site_verification: 0bNPKcxPxthHTZ2e7442eQPCtkEJ8Ve7pIKzl5fJ5DQ # your google-site-verification ID (Google Search Console)
@@ -124,6 +137,7 @@ collections:
     output: true
     permalink: /publications/:path/
 
+news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
 news_limit: 7
 publications_url: /publications/type
 
@@ -139,7 +153,7 @@ highlight_theme_dark: native # https://github.com/jwarby/jekyll-pygments-themes
 kramdown:
   input: GFM
   syntax_highlighter_opts:
-    css_class: "highlight"
+    css_class: 'highlight'
     span:
       line_numbers: false
     block:
@@ -147,7 +161,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages"]
+include: ['_pages']
 exclude:
   - bin
   - README.md
@@ -166,7 +180,6 @@ keep_files:
   - CNAME
   - README.md
   - assets/img/favicon.ico
-  - assets/img/phdImage.jpeg
   - assets/img/prof_pic.jpg
   - assets/opengraph/opengraph.jpg
 
@@ -197,7 +210,7 @@ defaults:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  exclude: ["robots.txt"]
+  exclude: ['robots.txt']
   uglifier_args:
     harmony: true
 
@@ -303,23 +316,20 @@ imagemagick:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics: true # enables google analytics
-enable_panelbear_analytics: false # enables panelbear analytics
-enable_google_verification: true # enables google site verification
-enable_bing_verification: false # enables bing site verification
-enable_masonry: true # enables automatic project cards arangement
-enable_math: true # enables math typesetting (uses MathJax)
-enable_tooltips:
-  false # enables automatic tooltip links generated
-  # for each section titles on pages and posts
-enable_darkmode: true # enables switching between light/dark modes
-enable_navbar_social:
-  true # enables displaying social links in the
-  # navbar on the about page
-enable_project_categories:
-  false # enables categorization of projects into
-  # multiple categories
-enable_medium_zoom: false # enables image zoom feature (as on medium.com)
+enable_google_analytics:    true  # enables google analytics
+enable_panelbear_analytics: false  # enables panelbear analytics
+enable_google_verification: true  # enables google site verification
+enable_bing_verification:   false  # enables bing site verification
+enable_masonry:             true   # enables automatic project cards arangement
+enable_math:                true   # enables math typesetting (uses MathJax)
+enable_tooltips:            false  # enables automatic tooltip links generated
+                                   # for each section titles on pages and posts
+enable_darkmode:            true   # enables switching between light/dark modes
+enable_navbar_social:       true  # enables displaying social links in the
+                                   # navbar on the about page
+enable_project_categories:  false   # enables categorization of projects into
+                                   # multiple categories
+enable_medium_zoom:         false   # enables image zoom feature (as on medium.com)
 
 # -----------------------------------------------------------------------------
 # Library versions

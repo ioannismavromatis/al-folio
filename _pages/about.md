@@ -19,18 +19,29 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 
 ---
-I am a Principal Research Engineer, working for Toshiba Europe Ltd. Currently, I am the lead back-end architect of the UMBRELLA testbed that will support a 250+ node IoT testbed deployed in the northern Bristol, UK.
+I am a Principal Research Engineer, working for Toshiba Europe Ltd. I am working in a number of R&D areas, spanning across
+Cloud-native Computing, Cybersecurity, Machine Learning & Federated Learning, Sustainability, and Wireless Communications.
+
+I am the lead back-end architect of the [UMBRELLA testbed](https://www.umbrellaiot.com), supporting multiple testbeds and IoT devices deployed in the northern Bristol, UK.
 
 #### Research Interests:
-My areas of interest span around Connected and Autonomous Vehicles (CAVs), Cooperative Intelligent Transportation Systems (C-ITSs), and 5G Wireless Communications. Lately, I developed particular interest in Cloud-native technologies and Serverless Architectures, on Cybersecurity for Industrial Control Systems, and Digital Twins.
+Currently, my areas of interest span around Cloud-native technologies and Serverless Architectures, Cybersecurity for Industrial Control Systems, Digital Twins, and Sustainability for Machine Learning & Federated Learning deployments. In the past I worked in the areas f Connected and Autonomous Vehicles (CAVs), Cooperative Intelligent Transportation Systems (C-ITSs), and 5G Wireless Communications. 
 
 ---
-I am the developer of the open-source simulation framework **"DRIVE: Digital twin for self-dRiving Intelligent VEhicles"**.
+Developer of the open-source simulation framework **"DRIVE: Digital twin for self-dRiving Intelligent VEhicles"**.
 
 
 <a class="github-button" href="https://github.com/ioannismavromatis/DRIVE_Simulator"
    data-icon="octicon-star" data-show-count="true"
    aria-label="Star ioannismavromatis/DRIVE_Simulator on GitHub">ioannismavromatis/DRIVE_Simulator</a>
+
+---
+Developer of a **multi-threaded version** of the popular **INET framework**, used for V2X simulation scenarios.
+
+
+<a class="github-button" href="https://github.com/v2x-dev/multithread-inet"
+   data-icon="octicon-star" data-show-count="true"
+   aria-label="Star v2x-dev/multithread-inet on GitHub">v2x-dev/multithread-inet</a>
 
 ---
 #### In the past:
