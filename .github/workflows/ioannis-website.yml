@@ -25,6 +25,9 @@ jobs:
           LANGUAGE: C.UTF-8
           LC_ALL: C.UTF-8
           JEKYLL_ENV: production
+      - name: Set outputs
+        id: vars
+        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
       - name: Push a directory to another repository
         uses: ioannismavromatis/copy_folder_to_another_repo_action@master
         env:
@@ -41,7 +44,7 @@ jobs:
           # branch to push folder to, defaults to master
           destination_branch: "master"
           # The commit message
-          commit_msg: "Updating website after commit at ioannismavromatis/al-folio@${GITHUB_SHA::6}"
+          commit_msg: "Updating website after ioannismavromatis/al-folio@${{ steps.vars.outputs.sha_short }}"
 
   # # Deployment job
   # deploy:
