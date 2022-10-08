@@ -1,5 +1,17 @@
 ---
 ---
+@inproceedings{le3dDataDrift,
+    author={{Mavromatis}, I. and {Sanchez-Mompo}, A. and {Raimondo}, F. and {Pope}, J. and {Bullo}, M. and {Weeks}, I. and {Kumar}, V. and {Carnelli}, P. and {Oikonomou}, G. and {Spyridopoulos}, T. and {Khan}, A.},
+    title = {{LE3D: A Lightweight Ensemble Framework of Data Drift Detectors for Resource-Constrained Devices}},
+    booktitle={Proc. of IEEE Consumer Communications & Networking Conference (CCNC) 2022},
+    year = {2023},
+    month={January},
+    abstract={Data integrity becomes paramount as the number of Internet of Things (IoT) sensor deployments increases. Sensor data can be altered by benign causes or malicious actions. Mechanisms that detect drifts and irregularities can prevent disruptions and data bias in the state of an IoT application. This paper presents LE3D, an ensemble framework of data drift estimators capable of detecting abnormal sensor behaviours. Working collaboratively with surrounding IoT devices, the type of drift (natural/abnormal) can also be identified and reported to the end-user. The proposed framework is a lightweight and unsupervised implementation able to run on resource-constrained IoT devices. Our framework is also generalisable, adapting to new sensor streams and environments with minimal online reconfiguration. We compare our method against state-of-the-art ensemble data drift detection frameworks, evaluating both the real-world detection accuracy as well as the resource utilisation of the implementation. Experimenting with real-world data and emulated drifts, we show the effectiveness of our method, which achieves up to 97% of detection accuracy while requiring minimal resources to run.},
+    address={Las Vegas, NV, USA},
+    keywords={Data Drift, IoT, Drift Detector, Resource-Constrained, Ensemble Learning},
+    bibtex_show=true
+}
+
 @inproceedings{erqTradeOffVideoCodecs,
     author={{Katsenou}, A. and {Mao}, J. and {Mavromatis}, I.},
     title = {{Energy-Rate-Quality Tradeoffs of State-of-the-Art Video Codecs}},
@@ -9,13 +21,16 @@
     abstract={The adoption of video conferencing and video communication services, accelerated by COVID-19, has driven a rapid increase in video data traffic. The demand for higher resolutions and quality, the need for immersive video formats, and the newest, more complex video codecs increase the energy consumption in data centers and display devices. In this paper, we explore and compare the energy consumption across optimized state-of-the-art video codecs, SVT-AV1, VVenC/VVdeC, VP9, and x.265. Furthermore, we align the energy usage with various objective quality metrics and the compression performance for a set of video sequences across different resolutions. The results indicate that SVT-AV1 provides the best tradeoff between energy consumption and quality. The reported results aim to serve as a guide towards sustainable video streaming while not compromising the quality of experience of the end user.},
     address={San Jose, CA, USA},
     keywords={Video Codecs, Energy Consumption, VVenC/VVdeC, SVT-AV1, VP9, x.265.},
+    pdf={energyRateQualityEvaluation.pdf},
+    arxiv={https://arxiv.org/abs/2210.00618},
+    code={https://github.com/ioannismavromatis/Energy-VideoCodecs},
     bibtex_show=true
 }
 
 @article{streetcareDataset,
     title={{A Dataset of Images of Public Streetlights with Operational Monitoring using Computer Vision Techniques}},
     journal={Data in Brief},
-    month={April},
+    month={October},
     year = {2022},
     arxiv = {2203.16915},
     author={I. {Mavromatis} and A. {Stanoev} and P. {Carnelli} and Y. {Jin} and M. {Sooriyabandara} and A. {Khan}},
