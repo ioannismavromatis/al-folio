@@ -1,11 +1,26 @@
 ---
 ---
+
+@inproceedings{le3dDemo,
+    author={{Mavromatis}, I. and {Khan}, A.},
+    title = {{Demo: LE3D: A Privacy-preserving Lightweight Data Drift Detection Framework}},
+    booktitle={Proc. of IEEE Consumer Communications & Networking Conference (CCNC) 2023},
+    year = {2023},
+    month={January},
+    arxiv = {2211.01827},
+    abstract={This paper presents LE3D; a novel data drift detection framework for preserving data integrity and confidentiality. LE3D is a generalisable platform for evaluating novel drift detection mechanisms within the Internet of Things (IoT) sensor deployments. Our framework operates in a distributed manner, preserving data privacy while still being adaptable to new sensors with minimal online reconfiguration. Our framework currently supports multiple drift estimators for time-series IoT data and can easily be extended to accommodate new data types and drift detection mechanisms. This demo will illustrate the functionality of LE3D under a real-world-like scenario.},
+    address={Las Vegas, NV, USA},
+    keywords={Data Drift, IoT, Drift Detector, Resource-Constrained, Ensemble Learning},
+    bibtex_show=true
+}
+
 @inproceedings{le3dDataDrift,
     author={{Mavromatis}, I. and {Sanchez-Mompo}, A. and {Raimondo}, F. and {Pope}, J. and {Bullo}, M. and {Weeks}, I. and {Kumar}, V. and {Carnelli}, P. and {Oikonomou}, G. and {Spyridopoulos}, T. and {Khan}, A.},
     title = {{LE3D: A Lightweight Ensemble Framework of Data Drift Detectors for Resource-Constrained Devices}},
-    booktitle={Proc. of IEEE Consumer Communications & Networking Conference (CCNC) 2022},
+    booktitle={Proc. of IEEE Consumer Communications & Networking Conference (CCNC) 2023},
     year = {2023},
     month={January},
+    arxiv = {2211.01840},
     abstract={Data integrity becomes paramount as the number of Internet of Things (IoT) sensor deployments increases. Sensor data can be altered by benign causes or malicious actions. Mechanisms that detect drifts and irregularities can prevent disruptions and data bias in the state of an IoT application. This paper presents LE3D, an ensemble framework of data drift estimators capable of detecting abnormal sensor behaviours. Working collaboratively with surrounding IoT devices, the type of drift (natural/abnormal) can also be identified and reported to the end-user. The proposed framework is a lightweight and unsupervised implementation able to run on resource-constrained IoT devices. Our framework is also generalisable, adapting to new sensor streams and environments with minimal online reconfiguration. We compare our method against state-of-the-art ensemble data drift detection frameworks, evaluating both the real-world detection accuracy as well as the resource utilisation of the implementation. Experimenting with real-world data and emulated drifts, we show the effectiveness of our method, which achieves up to 97% of detection accuracy while requiring minimal resources to run.},
     address={Las Vegas, NV, USA},
     keywords={Data Drift, IoT, Drift Detector, Resource-Constrained, Ensemble Learning},
@@ -22,7 +37,7 @@
     address={San Jose, CA, USA},
     keywords={Video Codecs, Energy Consumption, VVenC/VVdeC, SVT-AV1, VP9, x.265.},
     pdf={energyRateQualityEvaluation.pdf},
-    arxiv={https://arxiv.org/abs/2210.00618},
+    arxiv={2210.00618},
     code={https://github.com/ioannismavromatis/Energy-VideoCodecs},
     bibtex_show=true
 }
@@ -31,8 +46,11 @@
     title={{A Dataset of Images of Public Streetlights with Operational Monitoring using Computer Vision Techniques}},
     journal={Data in Brief},
     month={October},
+    volume = {45},
+    pages = {108658},
     year = {2022},
-    arxiv = {2203.16915},
+    html = {https://doi.org/10.1016/j.dib.2022.108658},
+    doi = {10.1016/j.dib.2022.108658},
     author={I. {Mavromatis} and A. {Stanoev} and P. {Carnelli} and Y. {Jin} and M. {Sooriyabandara} and A. {Khan}},
     keywords={Streetlight, Street Furniture, Light and Emergency Light Maintenance, Lighting Columns, Computer Vision, Machine Learning, Smart Cities},
     abstract={A dataset of street light images is presented. Our dataset consists of ∼350k images, taken from 140 UMBRELLA nodes installed in the South Gloucestershire region in the UK. Each UMBRELLA node is installed on the pole of a lamppost and is equipped with a Raspberry Pi Camera Module v1 facing upwards towards the sky and lamppost light bulb. Each node collects an image at hourly intervals for 24h every day. The data collection spans for a period of six months. 
