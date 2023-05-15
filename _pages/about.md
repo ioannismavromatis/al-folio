@@ -24,6 +24,8 @@ Cloud-native Computing, Cybersecurity, Machine Learning & Federated Learning, Su
 
 I am the lead back-end architect of the [UMBRELLA testbed](https://www.umbrellaiot.com), supporting multiple testbeds and IoT devices deployed in the northern Bristol, UK.
 
+<br />
+
 #### Research Interests:
 Currently, my areas of interest span around Cloud-native technologies and Serverless Architectures, Cybersecurity for Industrial Control Systems, Digital Twins, and Sustainability for Machine Learning & Federated Learning deployments. In the past I worked in the areas of Connected and Autonomous Vehicles (CAVs), Cooperative Intelligent Transportation Systems (C-ITSs), and 5G Wireless Communications. 
 
