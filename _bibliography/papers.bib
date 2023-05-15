@@ -1,13 +1,27 @@
 ---
 ---
 
+@inproceedings{flare,
+    author={{Chow}, T. and {Raza}, U. and {Mavromatis}, I. and {Khan}, A.},
+    title = {{FLARE: Detection and Mitigation of Concept Drift for Federated Learning based IoT Deployments}},
+    booktitle={Proc. of International Wireless Communications & Mobile Computing Conference (IWCMC) 2023},
+    year = {2023},
+    month={June},
+    abstract={Intelligent, large-scale IoT ecosystems have become possible due to recent advancements in sensing technologies, distributed learning, and low-power inference in embedded devices. In traditional cloud-centric approaches, raw data is transmitted to a central server for training and inference purposes. On the other hand, Federated Learning migrates both tasks closer to the edge nodes and endpoints. This allows for a significant reduction in data exchange while preserving the privacy of users. Trained models, though, may under-perform in dynamic environments due to changes in the data distribution, affecting the model's ability to infer accurately; this is referred to as concept drift. Such drift may also be adversarial in nature. Therefore, it is of paramount importance to detect such behaviours promptly. In order to simultaneously reduce communication traffic and maintain the integrity of inference models, we introduce FLARE, a novel lightweight dual-scheduler FL framework that conditionally transfers training data, and deploys models between edge and sensor endpoints based on observing the model's training behaviour and inference statistics, respectively. We show that FLARE can significantly reduce the amount of data exchanged between edge and sensor nodes compared to fixed-interval scheduling methods (over 5x reduction), is easily scalable to larger systems, and can successfully detect concept drift reactively with at least a 16x reduction in latency.},
+    address={Marrakesh, Morocco},
+    pdf={flare.pdf},
+    keywords={Federated Learning, Distributed deployment, Concept Drift, Model Robustness, Scalable IoT Inference},
+    bibtex_show=true
+}
+
 @inproceedings{le3dDemo,
     author={{Mavromatis}, I. and {Khan}, A.},
     title = {{Demo: LE3D: A Privacy-preserving Lightweight Data Drift Detection Framework}},
     booktitle={Proc. of IEEE Consumer Communications & Networking Conference (CCNC) 2023},
     year = {2023},
     month={January},
-    arxiv = {2211.01827},
+    html={https://doi.org/10.1109/CCNC51644.2023.10060554},
+    doi={10.1109/CCNC51644.2023.10060554},
     abstract={This paper presents LE3D; a novel data drift detection framework for preserving data integrity and confidentiality. LE3D is a generalisable platform for evaluating novel drift detection mechanisms within the Internet of Things (IoT) sensor deployments. Our framework operates in a distributed manner, preserving data privacy while still being adaptable to new sensors with minimal online reconfiguration. Our framework currently supports multiple drift estimators for time-series IoT data and can easily be extended to accommodate new data types and drift detection mechanisms. This demo will illustrate the functionality of LE3D under a real-world-like scenario.},
     address={Las Vegas, NV, USA},
     pdf={le3dDemo.pdf},
@@ -21,7 +35,8 @@
     booktitle={Proc. of IEEE Consumer Communications & Networking Conference (CCNC) 2023},
     year = {2023},
     month={January},
-    arxiv = {2211.01840},
+    html={https://doi.org/10.1109/CCNC51644.2023.10060415},
+    doi={doi.org/10.1109/CCNC51644.2023.10060415},
     abstract={Data integrity becomes paramount as the number of Internet of Things (IoT) sensor deployments increases. Sensor data can be altered by benign causes or malicious actions. Mechanisms that detect drifts and irregularities can prevent disruptions and data bias in the state of an IoT application. This paper presents LE3D, an ensemble framework of data drift estimators capable of detecting abnormal sensor behaviours. Working collaboratively with surrounding IoT devices, the type of drift (natural/abnormal) can also be identified and reported to the end-user. The proposed framework is a lightweight and unsupervised implementation able to run on resource-constrained IoT devices. Our framework is also generalisable, adapting to new sensor streams and environments with minimal online reconfiguration. We compare our method against state-of-the-art ensemble data drift detection frameworks, evaluating both the real-world detection accuracy as well as the resource utilisation of the implementation. Experimenting with real-world data and emulated drifts, we show the effectiveness of our method, which achieves up to 97% of detection accuracy while requiring minimal resources to run.},
     address={Las Vegas, NV, USA},
     pdf={le3dEvaluation.pdf},
