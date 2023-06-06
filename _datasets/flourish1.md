@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FLOURISH Car Trials Dataset 1
-description: A dataset of ~50M exchanged CAMs 
+description: A dataset of ~50M exchanged CAMs.
 year: 2017
 length: 3 days (6 sessions)
 website: https://tinyurl.com/flourish-dataset-1

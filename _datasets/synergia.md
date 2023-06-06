@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Container Escape Detection
-description: Two container escape malicious scenarios
+description: Two container escape malicious scenarios.
 year: 2021
 length: 256 experiments for 4 configurations
 website: https://tinyurl.com/container-escape

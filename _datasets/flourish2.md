@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FLOURISH Car Trials Dataset 2
-description: A large-scale dataset of ETSI ITS-G5 DSRC measurements
+description: A large-scale dataset of ETSI ITS-G5 DSRC measurements.
 year: 2019
 length: 4 days (8 sessions)
 website: https://tinyurl.com/flourish-dataset-2
