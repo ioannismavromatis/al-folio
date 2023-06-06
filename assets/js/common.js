@@ -1,5 +1,6 @@
-$(document).ready(function () {
-    $('a.abstract').click(function () {
+// add toggle functionality to abstract and bibtex buttons
+$(document).ready(function() {
+    $('a.abstract').click(function() {
         $(this).parent().parent().find(".abstract.hidden").toggleClass('open');
         $(this).parent().parent().find(".bibtex.hidden.open").toggleClass('open');
     });
@@ -20,3 +21,16 @@ $(document).ready(function () {
             location.href = 'https://ioannismavromatis.com/dataset'; //redirect only on confirm
     });
 });
+
+// bootstrap-toc
+$(document).ready(function () {
+    if($('#toc-sidebar').length){
+        var navSelector = "#toc-sidebar";
+        var $myNav = $(navSelector);
+        Toc.init($myNav);
+        $("body").scrollspy({
+            target: navSelector,
+        });
+    }
+});
+

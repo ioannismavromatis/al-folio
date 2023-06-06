@@ -15,9 +15,9 @@ profile:
     <p>BS1 4ND, Bristol, UK</p>
 
 news: true  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
-
 ---
 I am a Principal Research Engineer, working for Toshiba Europe Ltd. I am working in a number of R&D areas, spanning across
 Cloud-native Computing, Cybersecurity, Machine Learning & Federated Learning, Sustainability, and Wireless Communications.
