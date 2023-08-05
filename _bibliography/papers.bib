@@ -1,6 +1,43 @@
 ---
 ---
 
+@article{humanBodyTrackingDataset,
+    title = {{A Dataset of Human Body Tracking of Walking Actions Captured using two Azure Kinect Sensors}},
+    journal = {Data in Brief},
+    volume = {49},
+    pages = {109334},
+    year = {2023},
+    month={May},
+    issn = {2352-3409},
+    doi = {10.1016/j.dib.2023.109334},
+    url = {https://www.sciencedirect.com/science/article/pii/S2352340923004523},
+    author = {{Posner}, C. and {Sanchez-Mompo}, A. and {Mavromatis}, I. and {Al-Ani}, M.},
+    keywords = {Computer vision, Machine learning, Body tracking, Human motion prediction, Gait analysis, Walking, Dataset, Azure Kinect},
+    abstract = {A dataset of body tracking information is presented. The dataset consists of 315 captured walking sequences. Each sequence is simultaneously captured by two Azure Kinect devices. The two captures are interleaved to effectively double the frame rate. Fifteen participants partook in this experiment. Each experiment consists of seven walking actions, and having three predefined trajectories per experiment. That results in 21 sequences per participant. The data were collected using the Azure Kinect Sensor SDK. They were later processed using the official tools and libraries provided by Microsoft. For each sequence and trajectory, the positions and orientations of thirty-two tracked joints were obtained and saved. The dataset is structured as follows. The experiments from each subject are saved in a single directory. Each directory contains multiple JSON files of timestamped body tracking information to enable the fusion of the two device streams. A calibration file is also provided, enabling the mapping of the coordinates between the two Azure Kinect devices capturing the data (mapping the coordinates of the device known as the Subordinate device to the Master device coordinate system). This data can be used to train neural networks for human motion prediction tasks or test pre-existing algorithms on Azure Kinect data. This dataset could also aid in gait recognition and analysis, as well as in performing action recognition and other surveillance activities. The dataset can be found at https://zenodo.org/record/7997856.},
+    keywords = {Environmental, Internet of Things, Data drift, Sensor, Smart building, Time series dataset},
+    pdf={humanBodyTracking.pdf},
+    bibtex_show=true
+}
+
+@article{multiSensorDataset,
+    title = {{Multi-sensor, Multi-device Smart Building Indoor Environmental Dataset}},
+    journal = {Data in Brief},
+    volume = {49},
+    pages = {109392},
+    year = {2023},
+    month={June},
+    issn = {2352-3409},
+    doi = {10.1016/j.dib.2023.109392},
+    html = {https://www.sciencedirect.com/science/article/pii/S2352340923005024},
+    author = {{Erol}, U. and {Raimondo}, F. and {Pope}, J. and {Gunner}, S. and {Kumar}, V. and {Mavromatis}, I. and {Carnelli}, P. and {Spyridopoulos}, T. and {Khan}, A. and {Oikonomou}, G.},
+    keywords = {Environmental, Internet of Things, Data drift, Sensor, Smart building, Time series dataset},
+    abstract = {A dataset of sensor measurements is presented. Our dataset contains discrete measurements of 8 IoT devices located in various places in a research lab at the University of Bristol. Nordic nRF52840 DK IoT devices periodically collects environmental data, such as temperature, humidity, pressure, gas, room light intensity, accelerometer; including also a measurement quality indicator. The measurements were taken every 10 seconds over a six-month period between February and September 2022. In addition, we provide Received Signal Strength Indicator (RSSI) of the IoT devices. The data files are formatted as CSV files. There are various software libraries available to access and read this file format. We provide “README.txt” file which explains the repository and how to use dataset. Each data file is named according to its creation date and, once it reaches a size of 1MB, it is compressed and archived. A new folder is created every week to store all the data files from that week automatically. The dataset can be used for drift detection such as malicious or anomaly detection algorithms. It can also be used for smart building applications like occupation detection. The dataset can be found at https://data.bris.ac.uk/data/dataset/fwlmb11wni392kodtyljkw4n2},
+    keywords = {Environmental, Internet of Things, Data drift, Sensor, Smart building, Time series dataset},
+    pdf={multiSensor.pdf},
+    code={https://github.com/jpope8/synergia_datadrift_dataset},
+    bibtex_show=true
+}
+
 @inproceedings{flare,
     author={{Chow}, T. and {Raza}, U. and {Mavromatis}, I. and {Khan}, A.},
     title = {{FLARE: Detection and Mitigation of Concept Drift for Federated Learning based IoT Deployments}},
@@ -9,6 +46,7 @@
     month={June},
     abstract={Intelligent, large-scale IoT ecosystems have become possible due to recent advancements in sensing technologies, distributed learning, and low-power inference in embedded devices. In traditional cloud-centric approaches, raw data is transmitted to a central server for training and inference purposes. On the other hand, Federated Learning migrates both tasks closer to the edge nodes and endpoints. This allows for a significant reduction in data exchange while preserving the privacy of users. Trained models, though, may under-perform in dynamic environments due to changes in the data distribution, affecting the model's ability to infer accurately; this is referred to as concept drift. Such drift may also be adversarial in nature. Therefore, it is of paramount importance to detect such behaviours promptly. In order to simultaneously reduce communication traffic and maintain the integrity of inference models, we introduce FLARE, a novel lightweight dual-scheduler FL framework that conditionally transfers training data, and deploys models between edge and sensor endpoints based on observing the model's training behaviour and inference statistics, respectively. We show that FLARE can significantly reduce the amount of data exchanged between edge and sensor nodes compared to fixed-interval scheduling methods (over 5x reduction), is easily scalable to larger systems, and can successfully detect concept drift reactively with at least a 16x reduction in latency.},
     address={Marrakesh, Morocco},
+    arxiv={2305.08504},
     pdf={flare.pdf},
     keywords={Federated Learning, Distributed deployment, Concept Drift, Model Robustness, Scalable IoT Inference},
     bibtex_show=true

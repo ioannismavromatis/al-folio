@@ -32,8 +32,12 @@ highlight_theme_light: github # https://github.com/jwarby/jekyll-pygments-themes
 highlight_theme_dark: native # https://github.com/jwarby/jekyll-pygments-themes
 
 # repo color theme
-repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
-repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
+repo_trophies:
+  enabled: true
+  theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
+  theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -80,12 +84,15 @@ orcid_id: 0000-0002-3309-132X # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: GLT-4646-2022 # your ID on Publons
+lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 osf_id: # your OSF ID
 research_gate_profile: Ioannis_Mavromatis3 # your profile on ResearchGate
+scopus_id: # your profile on Scopus
 blogger_url: # your blogger URL
 work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
+wikipedia_id: # your wikipedia id (Case sensitive)
 dblp_url: https://dblp.org/pid/195/6027.html # your DBLP profile url
 stackoverflow_id: # your stackoverflow id
 kaggle_id: # your kaggle id
@@ -97,6 +104,7 @@ instagram_id: # your instagram id
 facebook_id: # your facebook id
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
+zotero_username: # your zotero username
 
 contact_note:
 
@@ -107,8 +115,8 @@ contact_note:
 google_analytics: UA-180764112-1 # your google-analytics ID (format: UA-XXXXXXXXX)
 google_site_verification: 0bNPKcxPxthHTZ2e7442eQPCtkEJ8Ve7pIKzl5fJ5DQ # your google-site-verification ID (Google Search Console)
 
-bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
-panelbear_analytics: # panelbear analytics site ID (format: XXXXXXXXX)
+google_site_verification:  # your google-site-verification ID (Google Search Console)
+bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -126,18 +134,18 @@ pagination:
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out
 # the information below.
-giscus:
-  repo: alshedivat/al-folio # <your-github-user-name>/<your-github-repo-name>
-  repo_id: MDEwOlJlcG9zaXRvcnk2MDAyNDM2NQ==
-  category: Comments # name of the category under which discussions will be created
-  category_id: DIC_kwDOA5PmLc4CTBt6
-  mapping: title # identify discussions by post title
-  strict: 1 # use strict identification mode
-  reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
-  input_position: bottom # whether to display input form below (bottom) or above (top) the comments
-  theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
-  emit_metadata: 0
-  lang: en
+# giscus:
+#   repo: alshedivat/al-folio # <your-github-user-name>/<your-github-repo-name>
+#   repo_id: MDEwOlJlcG9zaXRvcnk2MDAyNDM2NQ==
+#   category: Comments # name of the category under which discussions will be created
+#   category_id: DIC_kwDOA5PmLc4CTBt6
+#   mapping: title # identify discussions by post title
+#   strict: 1 # use strict identification mode
+#   reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
+#   input_position: bottom # whether to display input form below (bottom) or above (top) the comments
+#   theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
+#   emit_metadata: 0
+#   lang: en
 
 # Comments
 disqus_shortname: # put your disqus shortname
@@ -221,12 +229,15 @@ plugins:
   - jekyll-diagrams
   - jekyll-email-protect
   - jekyll-feed
+  - jekyll-get-json
   - jekyll-imagemagick
+  - jekyll-jupyter-notebook 
+  - jekyll-link-attributes   
   - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-sitemap
-  - jekyll-link-attributes
+  - jekyll-toc  
   - jekyll-twitter-plugin
   - jemoji
 
@@ -365,7 +376,7 @@ imagemagick:
 # -----------------------------------------------------------------------------
 
 enable_google_analytics: true # enables google analytics
-enable_panelbear_analytics: false # enables panelbear analytics
+enable_cronitor_analytics: false  # enables cronitor RUM analytics
 enable_google_verification: true # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arangement
@@ -395,9 +406,11 @@ bootstrap:
   integrity:
     css: "sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
     js: "sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8="
+bootstrap-table:
+  version: "1.21.4"    
 fontawesome:
-  version: "5.15.4"
-  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+  version: "6.4.0"
+  integrity: "sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8="
 jquery:
   version: "3.6.0"
   integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -417,3 +430,24 @@ popper:
 medium_zoom:
   version: "1.0.8"
   integrity: "sha256-7PhEpEWEW0XXQ0k6kQrPKwuoIomz8R8IYyuU1Qew4P8="
+
+# -----------------------------------------------------------------------------
+# Get external JSON data
+# -----------------------------------------------------------------------------
+
+# jekyll_get_json:
+#   - data: resume
+#     json: assets/json/resume.json # it can also be an url
+# jsonresume:
+#   - basics
+#   - work
+#   - education
+#   - publications
+#   - projects
+#   - volunteer
+#   - awards
+#   - certificates
+#   - skills
+#   - languages
+#   - interests
+#   - references
