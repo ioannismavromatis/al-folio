@@ -6,6 +6,8 @@ description:
 nav: true
 social: true
 nav_order: 4
+cv_pdf: 
+description: 
 ---
 <header class="post-header">
     <h1 class="post-title">My CVs</h1>
