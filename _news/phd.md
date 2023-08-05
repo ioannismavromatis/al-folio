@@ -3,7 +3,7 @@ layout: post
 title: It's official... I am a Dr now! 
 date: 2019-02-19 15:59:00-0400
 inline: false
-image: phdImage.jpeg
+image:
 ---
 
 It's official folks! I have a title now! **Dr Ioannis Mavromatis!**
