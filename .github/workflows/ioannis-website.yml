@@ -17,6 +17,8 @@ jobs:
         with:
           ruby-version: '3.2.2'
           bundler-cache: true
+      - name: Clean with Jekyll
+        run: bundle exec jekyll clean      
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --config _config_ioannis.yml
