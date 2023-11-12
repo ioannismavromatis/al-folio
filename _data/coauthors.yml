@@ -2,9 +2,25 @@
   - firstname: ["Adnan", "A."]
     url: https://scholar.google.com/citations?user=23B9gfYAAAAJ&hl=en
 
+"Anthi":
+  - firstname: ["Eirini", "E."]
+    url: https://scholar.google.co.uk/citations?user=YswPv0UAAAAJ&hl=en
+
+"Belarbi":
+  - firstname: ["Othmane", "O."]
+    url: https://scholar.google.com/citations?user=a5YJkOUAAAAJ&hl=en
+
+"Bullo":
+  - firstname: ["Marcello", "M."]
+    url: https://scholar.google.com/citations?user=k0a9iN8AAAAJ&hl=en
+
 "Chatzimisios":
   - firstname: ["Periklis", "P."]
     url: https://scholar.google.com/citations?user=BZEhpgkAAAAJ&hl=en
+
+"Friji":
+  - firstname: ["Hamdi", "H."]
+    url: https://scholar.google.com/citations?user=3UbVkysAAAAJ&hl=en
 
 "Jin":
   - firstname: ["Yichao", "Y."]
@@ -37,6 +53,10 @@
 "Oikonomou":
   - firstname: ["George", "G."]
     url: https://scholar.google.com/citations?user=oLr89jwAAAAJ&hl=en
+
+"Olivereau":
+  - firstname: ["Alexis", "A."]
+    url: https://scholar.google.fr/citations?user=cDk_V58AAAAJ&hl=fr
 
 "Pasquier":
   - firstname: ["Thomas", "T."]

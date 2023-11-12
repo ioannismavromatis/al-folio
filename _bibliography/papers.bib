@@ -1,12 +1,41 @@
 ---
 ---
 
+@inproceedings{frost,
+    author={{Mavromatis}, I. and {De Feo}, S. and {Carnelli}, P. and {Piechocki}, R. J. and {Khan}, A.},
+    title = {{FROST: Towards Energy-efficient AI-on-5G Platforms - A GPU Power Capping Evaluation}},
+    booktitle={Proc. of IEEE Conference on Standards for Communications and Networking (CSCN)},
+    year = {2023},
+    abstract = {The Open Radio Access Network (O-RAN) is a burgeoning market with projected growth in the upcoming years. RAN has the highest CAPEX impact on the network and, most importantly, consumes 73\% of its total energy. That makes it an ideal target for optimisation through the integration of Machine Learning (ML). However, the energy consumption of ML is frequently overlooked in such ecosystems. Our work addresses this critical aspect by presenting FROST -- Flexible Reconfiguration method with Online System Tuning - a solution for energy-aware ML pipelines that adhere to O-RAN's specifications and principles. FROST is capable of profiling the energy consumption of an ML pipeline and optimising the hardware accordingly, thereby limiting the power draw. Our findings indicate that FROST can achieve energy savings of up to 26.4% without compromising the model's accuracy or introducing significant time delays.},
+    month={Nov},
+    arxiv={2310.11131},
+    pdf={frost.pdf},
+    code = {https://github.com/stefanodefeo/SustainableML},
+    keywords={Machine Learning, Power Profiling, Power Capping, O-RAN, 5G, Sustainable AI, Green AI},
+    address={Munich, Germany},
+    bibtex_show=true
+}
+
+@inproceedings{multiStageIDS,
+    author={{Friji}, H. and {Mavromatis}, I. and {Sanchez-Mompo}, A. and {Carnelli}, P. and {Olivereau}, A. and {Khan}, A.},
+    title = {{Multi-stage Attack Detection and Prediction Using Graph Neural Networks: An IoT Feasibility Study}},
+    booktitle={Proc. of IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)},
+    year = {2023},
+    abstract = {With the ever-increasing reliance on digital networks for various aspects of modern life, ensuring their security has become a critical challenge. Intrusion Detection Systems play a crucial role in ensuring network security, actively identifying and mitigating malicious behaviours. However, the relentless advancement of cyber-threats has rendered traditional/classical approaches insufficient in addressing the sophistication and complexity of attacks. This paper proposes a novel 3-stage intrusion detection system inspired by a simplified version of the Lockheed Martin cyber kill chain to detect advanced multi-step attacks. The proposed approach consists of three models, each responsible for detecting a group of attacks with common characteristics. The detection outcome of the first two stages is used to conduct a feasibility study on the possibility of predicting attacks in the third stage. Using the ToN IoT dataset, we achieved an average of 94\% F1-Score among different stages, outperforming the benchmark approaches based on Random-forest model.  Finally, we comment on the feasibility of this approach to be integrated in a real-world system and propose various possible future work.},
+    month={Nov},
+    pdf={multiStageIDS.pdf},
+    keywords={Intrusion Detection, Artificial Intelligence, Cyber Kill Chain, Graph Neural Network, Multi-step Attacks},
+    address={Exeter, UK},
+    bibtex_show=true
+}
+
 @inproceedings{multiSensorDataDrift,
     author={{Erol}, U. and {Raimondo}, F. and {Pope}, J. and {Gunner}, S. and {Kumar}, V. and {Mavromatis}, I. and {Carnelli}, P and {Spyridopoulos}, T. and {Khan}, A. and {Oikonomou}, G.},
     title = {{Evaluating Concept Drift Detectors on Real-World Data}},
     booktitle={Proc. of ACM Embedded Wireless Systems and Networks (EWSN)},
     year = {2023},
     month={September},
+    abstract = {Cloud-IoT deployments are ubiquitous and employed in various application domains, including smart buildings. Often employed in public spaces, IoT devices are exposed to various security threats. One such attack is {"}anomalous concept drift{"}. It occurs when an attacker tampers with a device causing it to report realistic sensor data that slowly deviates from the correct value. Evaluating concept drift detectors on real-world data is ideal. Though many indoor datasets exist, our real-world dataset provides a natural, long-term collection of indoor environmental sensor readings over six months. The dataset consists of environmental sensor samples collected via eight IoT devices in a real office setting. The dataset is particularly useful for evaluating concept drift detection algorithms as spatial aspects can be used along with the signals. The dataset has been made openly available, and in this paper we use it to inject malicious concept drifts and to evaluate the performance of several drift detection techniques. The injection tool's source code is also publicly available.},    
     isbn={},
     address={Calabria, Italy},
     code={https://github.com/jpope8/synergia_datadrift_dataset},
@@ -22,6 +51,7 @@
     abstract={The vast increase of IoT technologies and the ever-evolving attack vectors and threat actors have increased cyber-security risks dramatically. Novel attacks can compromise IoT devices to gain access to sensitive data or control them to deploy further malicious activities. The detection of novel attacks often relies upon AI solutions. A common approach to implementing AI-based IDS in distributed IoT systems is in a centralised manner. However, this approach may violate data privacy and secrecy. In addition, centralised data collection prohibits the scale-up of IDSs. Therefore, intrusion detection solutions in IoT ecosystems need to move towards a decentralised direction. FL has attracted significant interest in recent years due to its ability to perform collaborative learning while preserving data confidentiality and locality. Nevertheless, most FL-based IDS for IoT systems are designed under unrealistic data distribution conditions. To that end, we design an experiment representative of the real world and evaluate the performance of two FL IDS implementations, one based on DNNs and another on our previous work on DBNs. For our experiments, we rely on TON-IoT, a realistic IoT network traffic dataset, associating each IP address with a single FL client. Additionally, we explore pre-training and investigate various aggregation methods to mitigate the impact of data heterogeneity. Lastly, we benchmark our approach against a centralised solution. The comparison shows that the heterogeneous nature of the data has a considerable negative impact on the model performance when trained in a distributed manner. However, in the case of a pre-trained initial global FL model, we demonstrate a performance improvement of over 20\% (F1-score) when compared against a randomly initiated global model.},
     address={Kuala Lumpur, Malaysia},
     arxiv={2306.02715},
+    pdf={idsFL.pdf},
     keywords={Federated Learning, Intrusion Detection System, Internet of Things, Deep Learning, Deep Belief Networks},
     bibtex_show=true
 }
