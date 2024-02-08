@@ -17,40 +17,58 @@ latest_posts: false  # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-As the Lead 5G/Future Networks Technologist at Digital Catapult in London, UK, I work at the forefront of pioneering R&D in the field of future networks. 
+---
+#### About me:
+I am a passionate in driving innovation and pioneering R&D in future wireless and networking systems.
 
-My current involvement in the [REASON](https://www.linkedin.com/company/reason-open-networks/) focuses on the orchestration, seamless integration, and the delivery of an optimised end-to-end multi-technology, multi-vendor, ML-enabled, open 6G communication network.
+I am currently involved as a Lead 5G/Future Networks Technologist in the [REASON](https://reason-open-networks.ac.uk) project with a focus on building a state-of-the-art open AI-native Multi-access 6G Communication network.
 
-I am one of the lead developers and architects of the [UMBRELLA ecosystem](https://www.umbrellaiot.com), supporting multiple testbeds and IoT devices deployed in the northern Bristol, UK. I frequently contribute to various open-source projects and I have extensive experience in designing, building and deploying large-scale IoT and 5G testbeds.
+In my previous roles, I led as the backend architect and developer for the [UMBRELLA ecosystem](https://www.umbrellaiot.com), supporting multiple testbeds and IoT devices in the northern part of Bristol, UK, and contributed to various research areas around Machine Learning, Cybersecurity, and Wireless Communications.
 
-<br />
+Overall, I enjoy working with cutting-edge technologies, I am passionate about contributing to open-source projects and I specialise in designing, building and deploying large-scale IoT and 5G testbeds.
+
+---
 
 #### Research Interests:
 Currently, my interests span around 5G & Beyond, Future Communication Networks, Sustainability for Machine Learning & Federated Learning, Cybersecurity and Cloud-native technologies. In the past, I worked in various areas around Connected and Autonomous Vehicles (CAVs), Cooperative Intelligent Transportation Systems (C-ITSs), Serverless Computing, Industrial Control Systems, and Digital Twins.
 
 ---
-Developer of the open-source simulation framework **"DRIVE: Digital twin for self-dRiving Intelligent VEhicles"**.
+#### Open-source Projects:
+<div class="row">
+  <div class="col-md-8" markdown="1">
+  Simulation framework for Connected Autonomous Vehicles **"DRIVE: Digital twin for self-dRiving Intelligent VEhicles"**.
+  </div>
+
+  <div class="col-md-4 d-flex align-items-center" markdown="1"><a class="github-button" href="https://github.com/ioannismavromatis/DRIVE_Simulator"
+        data-icon="octicon-star" data-show-count="true"
+        aria-label="Star ioannismavromatis/DRIVE_Simulator on GitHub">ioannismavromatis/DRIVE_Simulator</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8" markdown="1">
+  A **multi-threaded version** of the popular **INET framework**, used for V2X simulation scenarios.
+  </div>
+
+  <div class="col-md-4 d-flex align-items-center" markdown="1"><a class="github-button" href="https://github.com/v2x-dev/multithread-inet"
+      data-icon="octicon-star" data-show-count="true"
+      aria-label="Star v2x-dev/multithread-inet on GitHub">v2x-dev/multithread-inet</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-8" markdown="1">
+  Framework for evaluating the **energy consumption of Machine Learning models**.
+  </div>
+
+  <div class="col-md-4 d-flex align-items-center" markdown="1"><a class="github-button" href="https://github.com/ioannismavromatis/sustainable-ai"
+      data-icon="octicon-star" data-show-count="true"
+      aria-label="Star ioannismavromatis/sustainable-ai on GitHub">ioannismavromatis/sustainable-ai</a>
+  </div>
+</div>
 
 
-<a class="github-button" href="https://github.com/ioannismavromatis/DRIVE_Simulator"
-   data-icon="octicon-star" data-show-count="true"
-   aria-label="Star ioannismavromatis/DRIVE_Simulator on GitHub">ioannismavromatis/DRIVE_Simulator</a>
 
----
-Developer of a **multi-threaded version** of the popular **INET framework**, used for V2X simulation scenarios.
-
-
-<a class="github-button" href="https://github.com/v2x-dev/multithread-inet"
-   data-icon="octicon-star" data-show-count="true"
-   aria-label="Star v2x-dev/multithread-inet on GitHub">v2x-dev/multithread-inet</a>
-
----
-Developer of a test framework evaluating the **energy consumption of Machine Learning models**.
-
-
-<a class="github-button" href="https://github.com/ioannismavromatis/sustainable-ai"
-   data-icon="octicon-star" data-show-count="true"
-   aria-label="Star ioannismavromatis/sustainable-ai on GitHub">ioannismavromatis/sustainable-ai</a>
 
 ---
 #### In the past:

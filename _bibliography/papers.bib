@@ -1,5 +1,35 @@
 ---
 ---
+
+@inproceedings{systemBias,
+    author={{Gao}, J. and {Mavromatis}, I. and {Li}, P. and {Carnelli}, P. and {Khan}, A.},
+    title = {{Mitigating System Bias in Resource Constrained Asynchronous Federated Learning Systems}},
+    booktitle={Proc. of IEEE PerCom Workshop on Pervasive and Resource-constrained AI (PeRConAI)},
+    year = {2024},
+    abstract = {Federated learning (FL) systems face performance challenges in dealing with heterogeneous devices and non-identically distributed data across clients. We propose a dynamic global model aggregation method within Asynchronous Federated Learning (AFL) deployments to address these issues. Our aggregation method scores and adjusts the weighting of client model updates based on their upload frequency to accommodate differences in device capabilities. Additionally, we also immediately provide an updated global model to clients after they upload their local models to reduce idle time and improve training efficiency. We evaluate our approach within an AFL deployment consisting of 10 simulated clients with heterogeneous compute constraints and non-IID data. The simulation results, using the FashionMNIST dataset, demonstrate over 10% and 19% improvement in global model accuracy compared to state-of-the-art methods PAPAYA and FedAsync, respectively. Our dynamic aggregation method allows reliable global model training despite limiting client resources and statistical data heterogeneity. This improves robustness and scalability for real-world FL deployments.},
+    month={Mar},
+    pdf={systemBias.pdf},
+    arxiv={2401.13366},
+    keywords={Machine Learning; Federated Learning; Scalability; Resource-constrained Devices; System Bias; Device Heterogeneity},
+    address={Biarritz, France},
+    bibtex_show=true
+}
+
+@inproceedings{umbrellaMLOps,
+    author={{Li}, P. and {Mavromatis}, I. and {Khan}, A.},
+    title = {{Past, Present, Future: A Comprehensive Exploration of AI Use Cases in the UMBRELLA IoT Testbed}},
+    booktitle={Proc. of IEEE PerCom Workshop on Pervasive Computing Challenges in Trustable Crowdsensing Systems (TrustSense)},
+    year = {2024},
+    abstract = {UMBRELLA is a large-scale, open-access Internet of Things (IoT) ecosystem incorporating over 200 multi-sensor multi-wireless nodes, 20 collaborative robots, and edge-intelligence-enabled devices. This paper provides a guide to the implemented and prospective artificial intelligence (AI) capabilities of UMBRELLA in real-world IoT systems. Four existing UMBRELLA applications are presented in detail: 1) An automated streetlight monitoring for detecting issues and triggering maintenance alerts; 2) A Digital twin of building environments providing enhanced air quality sensing with reduced cost; 3) A large-scale Federated Learning framework for reducing communication overhead; and 4) An intrusion detection for containerised applications identifying malicious activities. Additionally, the potential of UMBRELLA is outlined for future smart city and multi-robot crowdsensing applications enhanced by semantic communications and multi-agent planning. Finally, to realise the above use-cases we discuss the need for a tailored MLOps platform to automate UMBRELLA's model pipelines and establish trust.},
+    month={Mar},
+    pdf={umbrellaMLOps.pdf},
+    highlight={Invited Paper},
+    arxiv={2401.13346},
+    keywords={IoT; Wireless Communication; Robotics; Edge Intelligence; Use Cases; MLOps},
+    address={Biarritz, France},
+    bibtex_show=true
+}
+
 @article{cavshield,
     title = {{Cybersecurity in Motion: A Survey of Challenges and Requirements for Future Test Facilities of CAVs}},
     author = {I. {Mavromatis} and T. {Spyridopoulos} and P. {Carnelli} and W. H. {Chin} and A. {Khalil} and J. {Chakravarty} and L. {Cipolina Kun} and R. J. {Piechocki} and C. {Robbins} and D. {Cunnington} and L. {Chase} and L. {Chiazor} and C. {Preston} and Rahul and A. {Khan}},
@@ -8,6 +38,9 @@
     year = {2023},
     month = dec,
     keywords={C-ITS; Cybersecurity; CAV; Cybersecurity Centre of Excellence; Cybersecurity Ecosystem; Threat Detection/Mitigation},
+    doi = {10.4108/eetinis.v10i4.4237},
+    html = {https://eudl.eu/doi/10.4108/eetinis.v10i4.4237},
+    pdf={cavshield.pdf},
     bibtex_show=true
 }
 
@@ -21,7 +54,7 @@
     arxiv={2310.11131},
     pdf={frost.pdf},
     code = {https://github.com/stefanodefeo/SustainableML},
-    keywords={Machine Learning, Power Profiling, Power Capping, O-RAN, 5G, Sustainable AI, Green AI},
+    keywords={Machine Learning; Power Profiling; Power Capping; O-RAN; 5G; Sustainable AI; Green AI},
     address={Munich, Germany},
     bibtex_show=true
 }
@@ -47,6 +80,7 @@
     month={September},
     abstract = {Cloud-IoT deployments are ubiquitous and employed in various application domains, including smart buildings. Often employed in public spaces, IoT devices are exposed to various security threats. One such attack is {"}anomalous concept drift{"}. It occurs when an attacker tampers with a device causing it to report realistic sensor data that slowly deviates from the correct value. Evaluating concept drift detectors on real-world data is ideal. Though many indoor datasets exist, our real-world dataset provides a natural, long-term collection of indoor environmental sensor readings over six months. The dataset consists of environmental sensor samples collected via eight IoT devices in a real office setting. The dataset is particularly useful for evaluating concept drift detection algorithms as spatial aspects can be used along with the signals. The dataset has been made openly available, and in this paper we use it to inject malicious concept drifts and to evaluate the performance of several drift detection techniques. The injection tool's source code is also publicly available.},    
     isbn={},
+    pdf={dataDriftDetectors.pdf},
     address={Calabria, Italy},
     code={https://github.com/jpope8/synergia_datadrift_dataset},
     bibtex_show=true
@@ -241,7 +275,7 @@ Each image taken is logged as a single entry in the dataset along with the Globa
 }
 
 @inproceedings{umbrellawireless2022,
-    author={  {Mavromatis}, I. and {Stanoev}, A. and {Portelli}, A. J. and {Lockie}, C. and {Ammann}, M. and {Jin}, Y. and {Sooriyabandara}, M.},
+    author={{Mavromatis}, I. and {Stanoev}, A. and {Portelli}, A. J. and {Lockie}, C. and {Ammann}, M. and {Jin}, Y. and {Sooriyabandara}, M.},
     title = {{Reliable IoT Firmware Updates: A Large-scale Mesh Network Performance Investigation}},
     booktitle={Proc. of IEEE Wireless Communications and Networking Conference (WCNC)},
     year = {2022},

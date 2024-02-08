@@ -32,7 +32,7 @@
 
 "Katsenou":
   - firstname: ["Angeliki", "A."]
-    url: https://scholar.google.com/citations?user=ZfXEr7sAAAAJ&hl=en&oi=ao
+    url: https://scholar.google.com/citations?user=ZfXEr7sAAAAJ&hl=en
 
 "Khan":
   - firstname: ["Aftab", "A."]
@@ -41,6 +41,10 @@
 "Kumar":
   - firstname: ["Vijay", "V."]
     url: https://scholar.google.com/citations?user=KUVMRJMAAAAJ&hl=en
+
+"Li":
+  - firstname: ["Peizheng", "P."]
+    url: https://scholar.google.com/citations?user=6xTM25oAAAAJ&hl=en
 
 "McConville":
   - firstname: ["Ryan", "R."]
