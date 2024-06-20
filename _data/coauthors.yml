@@ -6,6 +6,10 @@
   - firstname: ["Eirini", "E."]
     url: https://scholar.google.co.uk/citations?user=YswPv0UAAAAJ&hl=en
 
+"Antonakoglou":
+  - firstname: ["Konstantinos", "K."]
+    url: https://scholar.google.com/citations?user=rmKT4ToAAAAJ
+
 "Belarbi":
   - firstname: ["Othmane", "O."]
     url: https://scholar.google.com/citations?user=a5YJkOUAAAAJ&hl=en
@@ -22,6 +26,10 @@
   - firstname: ["Hamdi", "H."]
     url: https://scholar.google.com/citations?user=3UbVkysAAAAJ&hl=en
 
+"Ghosh":
+  - firstname: ["Saptarshi", "S."]
+    url: https://scholar.google.co.uk/citations?user=auHEoYYAAAAJ&hl=en
+
 "Jin":
   - firstname: ["Yichao", "Y."]
     url: https://scholar.google.com/citations?user=prcqwqAAAAAJ&hl=en
@@ -29,6 +37,10 @@
 "Jones":
   - firstname: ["Simon", "S."]
     url: https://scholar.google.com/citations?user=TJEhJIIAAAAJ&hl=en
+
+"Katsaros":
+  - firstname: ["Kostas", "Konstantinos", "K."]
+    url: https://scholar.google.com/citations?user=vZS1zGAAAAAJ&hl=en
 
 "Katsenou":
   - firstname: ["Angeliki", "A."]

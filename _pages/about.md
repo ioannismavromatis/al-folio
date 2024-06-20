@@ -19,9 +19,9 @@ social: false  # includes social icons at the bottom of the page
 ---
 ---
 #### About me:
-I am a passionate in driving innovation and pioneering R&D in future wireless and networking systems.
+Passionate in driving innovation and pioneering R&D in future wireless and networking systems.
 
-I am currently involved as a Lead 5G/Future Networks Technologist in the [REASON](https://reason-open-networks.ac.uk) project with a focus on building a state-of-the-art open AI-native Multi-access 6G Communication network.
+I am currently involved in the [REASON](https://reason-open-networks.ac.uk) project focusing on building a state-of-the-art open AI-native Multi-access 6G Communication network.
 
 In my previous roles, I led as the backend architect and developer for the [UMBRELLA ecosystem](https://www.umbrellaiot.com), supporting multiple testbeds and IoT devices in the northern part of Bristol, UK, and contributed to various research areas around Machine Learning, Cybersecurity, and Wireless Communications.
 
@@ -30,7 +30,7 @@ Overall, I enjoy working with cutting-edge technologies, I am passionate about c
 ---
 
 #### Research Interests:
-Currently, my interests span around 5G & Beyond, Future Communication Networks, Sustainability for Machine Learning & Federated Learning, Cybersecurity and Cloud-native technologies. In the past, I worked in various areas around Connected and Autonomous Vehicles (CAVs), Cooperative Intelligent Transportation Systems (C-ITSs), Serverless Computing, Industrial Control Systems, and Digital Twins.
+My interests span around 5G & Beyond, Future Communication Networks, Sustainability for Machine Learning & Federated Learning, Cybersecurity and Cloud-native technologies. In the past, I worked in various areas around Connected and Autonomous Vehicles (CAVs), Cooperative Intelligent Transportation Systems (C-ITSs), Serverless Computing, Industrial Control Systems, and Digital Twins.
 
 ---
 #### Open-source Projects:
@@ -67,12 +67,9 @@ Currently, my interests span around 5G & Beyond, Future Communication Networks, 
   </div>
 </div>
 
-
-
-
 ---
 #### In the past:
-* Principal Research Engineer at [Toshiba Europe Ltd.](https://www.toshiba.eu), working on:
+* Principal Research Engineer at [Toshiba Europe Ltd.](https://www.toshiba.eu), working among other project on:
   * [UMBRELLA](https://umbrellaiot.com/)
   * [CAVShield](https://zenzic.io/cybersecurity/)
   * [SYNERGIA](https://synergia.blogs.bristol.ac.uk)
