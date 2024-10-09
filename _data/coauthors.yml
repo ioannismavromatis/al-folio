@@ -106,6 +106,10 @@
   - firstname: ["Raúl", "Raul", "R."]
     url: https://scholar.google.com/citations?user=U_ldrLcAAAAJ&hl=en
 
+"Simeonidou":
+  - firstname: ["Dimitra", "D."]
+    url: https://scholar.google.com/citations?user=DppopzYAAAAJ&hl=en
+
 "Sooriyabandara":
   - firstname: ["Mahesh", "M."]
     url: https://dblp.org/pid/15/5883.html
@@ -121,6 +125,10 @@
 "Tassi":
   - firstname: ["Andrea", "A."]
     url: https://scholar.google.com/citations?user=qt-NloQAAAAJ&hl=en
+
+"Xenos":
+  - firstname: ["Evangelos", "E."]
+    url: https://scholar.google.com/citations?user=-_5TQeMAAAAJ&hl=en
 
 "Wang":
   - firstname: ["Xiaoyang", "X."]

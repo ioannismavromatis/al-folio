@@ -1,5 +1,32 @@
 ---
 ---
+@inproceedings{concept_drift,
+    author={{Mavromatis}, I. and {Katsenou}, A. and {Bardhi}, K. and {Xenos}, E., and {Simeonidou}, D.},
+    title = {{Connecting the Unconnected: A DT Case Study of Nomadic Nodes Deployment in Nepal}},
+    booktitle={Proc. of IEEE Consumer Communications & Networking Conference (CCNC)},
+    year = {2025},
+    abstract = {This paper addresses the challenge of robust cellular connectivity in dense, underdeveloped urban environments, specifically focusing on Kathmandu, Nepal. As cities grow, existing cellular infrastructure struggles to meet the demand for reliable, high-throughput, and low-latency communication services. The lack of investment in new technologies and the intricacies of the cities' landscape poses even more difficulties for robust connectivity. This work addresses the above challenges in a cost-effective and flexible way. We investigate the deployment of LTE Nomadic Nodes (NNs) at a scale in order to enhance network capacity and coverage. Utilising a Digital Twin (DT), we simulate and optimise NN placement, considering Kathmandu's physical and environmental characteristics. Our approach leverages the DRIVE DT framework, which enables the systemic evaluation of various network configurations and user mobility scenarios. The results demonstrate that NNs significantly improve signal strength and expected user datarates, presenting a viable solution for enhancing urban cellular connectivity.},
+    month={January},
+    pdf={nepalConnect.pdf},
+    keywords={Digital Twins, Optimal Positioning, LTE, Nomadic Nodes, Dense Urban Environment.},
+    address={Las Vegas, USA},
+    bibtex_show=true
+}
+
+@inproceedings{concept_drift,
+    author={{Mavromatis}, I. and {De Feo}, S. and {Khan}, A.},
+    title = {{FLAME: Adaptive and Reactive Concept Drift Mitigation for Federated Learning Deployments}},
+    booktitle={Proc. of Int. Conf. on Embedded Wireless Systems and Networks (EWSN 2024) - Workshop on Enabling Machine Learning Operations for next-Gen Embedded Wireless Networked Devices (EMERGE)},
+    year = {2024},
+    abstract = {This paper presents Federated Learning with Adaptive Monitoring and Elimination (FLAME), a novel solution capable of detecting and mitigating concept drift in Federated Learning (FL) Internet of Things (IoT) environments. Concept drift poses significant challenges for FL models deployed in dynamic and real-world settings. FLAME leverages an FL architecture, considers a real-world FL pipeline, and proves capable of maintaining model performance and accuracy while addressing bandwidth and privacy constraints. Introducing various features and extensions on previous works, FLAME offers a robust solution to concept drift, significantly reducing computational load and communication overhead. Compared to well-known lightweight mitigation methods, FLAME demonstrates superior performance in maintaining high F1 scores and reducing resource utilisation in large-scale IoT deployments, making it a promising approach for real-world applications.},
+    month={December},
+    pdf={concept_drift.pdf},
+    arxiv={2410.01386},
+    keywords={Concept Drift, Federated Learning, IoT, Adaptive Thresholding, Resource-Constrained},
+    address={Abu Dhabi, United Arab Emirates},
+    bibtex_show=true
+}
+
 @inproceedings{energy_ml,
     author={{Mavromatis}, I. and {Katsaros}, K. and {Khan}, A.},
     title = {{Computing Within Limits: An Empirical Study of Energy Consumption in ML Training and Inference}},
@@ -8,6 +35,7 @@
     abstract = {Machine learning (ML) has seen tremendous advancements, but its environmental footprint remains a concern. Acknowledging the growing environmental impact of ML this paper investigates Green ML, examining various model architectures and hyperparameters in both training and inference phases to identify energy-efficient practices. Our study leverages software-based power measurements for ease of replication across diverse configurations, models and datasets. In this paper, we examine multiple models and hardware configurations to identify correlations across the various measurements and metrics and key contributors to energy reduction. Our analysis offers practical guidelines for constructing sustainable ML operations, emphasising energy consumption and carbon footprint reductions while maintaining performance. As identified, short-lived profiling can quantify the long-term expected energy consumption. Moreover, model parameters can also be used to accurately estimate the expected total energy without the need for extensive experimentation.},
     month={July},
     pdf={energy_ml.pdf},
+    arxiv={2406.14328},
     code={https://github.com/ioannismavromatis/sustainable-ai},
     keywords={Machine Learning, Power Profiling, Energy Consumption, Sustainable AI, Green AI},
     address={Sozopol, Bulgaria},
@@ -22,6 +50,8 @@
     abstract = {The scope of the Sixth-Generation Self-Organized Networks (6G-SON) advances its predecessor’s capability towards agility, flexibility, and adaptability. On-demand overlay network- ing technologies have shown a prominent maturity while coping with the rising complexity and scale of enterprise, service provider, and data centre networks. In the recent past, the Software-Defined Networking paradigm has offered Model Driven Programmability resulting in minimizing the network management complexity through automation and orchestration. However, leveraging Ma- chine Learning-driven network optimization, a.k.a. Knowledge- Defined Networking (KDN), has still been a domain of interest for the Network Softwarization research community. In this article, we propose Intelligent Routing as a Service (iRaaS) architecture as an application layer cognitive routing framework for KDNs. iRaaS offers routing logic customization (i.e., customizing metric function, path-discovery algorithm, etc.) and provides an option to include heuristic parameters from trained models as a part of the metric calculation. iRaaS sits on the application plane above the knowledge plane in a KDN stack, thus providing platform- and vendor-agnostic coupling with existing network infrastructures. This article covers the scope of iRaaS by using reliability as a heuristic for standard path-discovery algorithms e.g., Shortest Path First (SPF) and Diffusion Update algorithm (DUAL) along with the architectural specification. We validate our approach through a Proof-of-Concept deployment.},
     month={June},
     pdf={iraas.pdf},
+    doi={10.23919/IFIPNetworking62109.2024.10619742},
+    html={https://doi.org/10.23919/IFIPNetworking62109.2024.10619742},
     keywords={SDN, KDN, Routing-as-a-Service, Network Programmability \& Automation, Routing API},
     address={Thessaloniki, Greece},
     bibtex_show=true
@@ -63,7 +93,8 @@
     abstract = {Federated learning (FL) systems face performance challenges in dealing with heterogeneous devices and non-identically distributed data across clients. We propose a dynamic global model aggregation method within Asynchronous Federated Learning (AFL) deployments to address these issues. Our aggregation method scores and adjusts the weighting of client model updates based on their upload frequency to accommodate differences in device capabilities. Additionally, we also immediately provide an updated global model to clients after they upload their local models to reduce idle time and improve training efficiency. We evaluate our approach within an AFL deployment consisting of 10 simulated clients with heterogeneous compute constraints and non-IID data. The simulation results, using the FashionMNIST dataset, demonstrate over 10% and 19% improvement in global model accuracy compared to state-of-the-art methods PAPAYA and FedAsync, respectively. Our dynamic aggregation method allows reliable global model training despite limiting client resources and statistical data heterogeneity. This improves robustness and scalability for real-world FL deployments.},
     month={Mar},
     pdf={systemBias.pdf},
-    arxiv={2401.13366},
+    doi={10.1109/PerComWorkshops59983.2024.10503273},
+    html={https://doi.org/10.1109/PerComWorkshops59983.2024.10503273},
     keywords={Machine Learning; Federated Learning; Scalability; Resource-constrained Devices; System Bias; Device Heterogeneity},
     address={Biarritz, France},
     bibtex_show=true
@@ -78,7 +109,8 @@
     month={Mar},
     pdf={umbrellaMLOps.pdf},
     highlight={Invited Paper},
-    arxiv={2401.13346},
+    doi={10.1109/PerComWorkshops59983.2024.10502658},
+    html={https://ieeexplore.ieee.org/document/10502658},
     keywords={IoT; Wireless Communication; Robotics; Edge Intelligence; Use Cases; MLOps},
     address={Biarritz, France},
     bibtex_show=true
@@ -123,6 +155,7 @@
     month={Nov},
     pdf={multiStageIDS.pdf},
     html={https://zenodo.org/records/10453864},
+    doi={10.1109/TrustCom60117.2023.00095},
     keywords={Intrusion Detection, Artificial Intelligence, Cyber Kill Chain, Graph Neural Network, Multi-step Attacks},
     address={Exeter, UK},
     bibtex_show=true
@@ -135,7 +168,8 @@
     year = {2023},
     month={September},
     abstract = {Cloud-IoT deployments are ubiquitous and employed in various application domains, including smart buildings. Often employed in public spaces, IoT devices are exposed to various security threats. One such attack is {"}anomalous concept drift{"}. It occurs when an attacker tampers with a device causing it to report realistic sensor data that slowly deviates from the correct value. Evaluating concept drift detectors on real-world data is ideal. Though many indoor datasets exist, our real-world dataset provides a natural, long-term collection of indoor environmental sensor readings over six months. The dataset consists of environmental sensor samples collected via eight IoT devices in a real office setting. The dataset is particularly useful for evaluating concept drift detection algorithms as spatial aspects can be used along with the signals. The dataset has been made openly available, and in this paper we use it to inject malicious concept drifts and to evaluate the performance of several drift detection techniques. The injection tool's source code is also publicly available.},    
-    isbn={},
+    doi={10.5555/3639940.3640003},
+    html={https://dl.acm.org/doi/10.5555/3639940.3640003},
     pdf={dataDriftDetectors.pdf},
     address={Calabria, Italy},
     code={https://github.com/jpope8/synergia_datadrift_dataset},
