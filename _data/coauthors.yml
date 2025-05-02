@@ -1,34 +1,171 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Aijaz":
+  - firstname: ["Adnan", "A."]
+    url: https://scholar.google.com/citations?user=23B9gfYAAAAJ&hl=en
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Anthi":
+  - firstname: ["Eirini", "E."]
+    url: https://scholar.google.co.uk/citations?user=YswPv0UAAAAJ&hl=en
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Antonakoglou":
+  - firstname: ["Konstantinos", "K."]
+    url: https://scholar.google.com/citations?user=rmKT4ToAAAAJ
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Asgari":
+  - firstname: ["Hamid", "H."]
+    url: https://scholar.google.com/citations?user=Mj_zIOEAAAAJ&hl=en
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Belarbi":
+  - firstname: ["Othmane", "O."]
+    url: https://scholar.google.com/citations?user=a5YJkOUAAAAJ&hl=en
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Bullo":
+  - firstname: ["Marcello", "M."]
+    url: https://scholar.google.com/citations?user=k0a9iN8AAAAJ&hl=en
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Chatzimisios":
+  - firstname: ["Periklis", "P."]
+    url: https://scholar.google.com/citations?user=BZEhpgkAAAAJ&hl=en
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"Friji":
+  - firstname: ["Hamdi", "H."]
+    url: https://scholar.google.com/citations?user=3UbVkysAAAAJ&hl=en
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Ghosh":
+  - firstname: ["Saptarshi", "S."]
+    url: https://scholar.google.co.uk/citations?user=auHEoYYAAAAJ&hl=en
+
+"Haas":
+  - firstname: ["Harald", "H."]
+    url: https://scholar.google.co.uk/citations?user=XxIwRJQAAAAJ&hl=en
+
+"Hussain":
+  - firstname: ["Rasheed", "R."]
+    url: https://scholar.google.com.my/citations?user=1LjRFakAAAAJ&hl=en
+
+"Jin":
+  - firstname: ["Yichao", "Y."]
+    url: https://scholar.google.com/citations?user=prcqwqAAAAAJ&hl=en
+
+"Jones":
+  - firstname: ["Simon", "S."]
+    url: https://scholar.google.com/citations?user=TJEhJIIAAAAJ&hl=en
+
+"Katsaros":
+  - firstname: ["Kostas", "Konstantinos", "K."]
+    url: https://scholar.google.com/citations?user=vZS1zGAAAAAJ&hl=en
+
+"Katsenou":
+  - firstname: ["Angeliki", "A."]
+    url: https://scholar.google.com/citations?user=ZfXEr7sAAAAJ&hl=en
+
+"Khan":
+  - firstname: ["Aftab", "A."]
+    url: https://scholar.google.com/citations?user=d5mrCzMAAAAJ&hl=en
+
+"Kumar":
+  - firstname: ["Vijay", "V."]
+    url: https://scholar.google.com/citations?user=KUVMRJMAAAAJ&hl=en
+
+"Li":
+  - firstname: ["Peizheng", "P."]
+    url: https://scholar.google.com/citations?user=6xTM25oAAAAJ&hl=en
+
+"Mahmoodi":
+  - firstname: ["Toktam", "T."]
+    url: https://scholar.google.com/citations?user=7fV2cH4AAAAJ&hl=en
+
+"McConville":
+  - firstname: ["Ryan", "R."]
+    url: https://scholar.google.com/citations?user=5fslgt0AAAAJ&hl=en
+
+"Moazzeni":
+  - firstname: ["Shadi", "S."]
+    url: https://scholar.google.com.au/citations?user=9UQoODkAAAAJ&hl=en
+
+"Nix":
+  - firstname: ["Andrew", "A."]
+    url: https://dblp.org/pid/50/6238.html
+
+"Oikonomou":
+  - firstname: ["George", "G."]
+    url: https://scholar.google.com/citations?user=oLr89jwAAAAJ&hl=en
+
+"Olivereau":
+  - firstname: ["Alexis", "A."]
+    url: https://scholar.google.fr/citations?user=cDk_V58AAAAJ&hl=fr
+
+"Parra Ullauri":
+  - firstname: ["Juan Marcelo", "Juan", "J. M.", "J."]
+    url: https://scholar.google.com/citations?user=eFeGkgQAAAAJ&hl=en
+
+"Pasquier":
+  - firstname: ["Thomas", "T."]
+    url: https://scholar.google.com/citations?user=TplQGj4AAAAJ&hl=en
+
+"Piechocki":
+  - firstname: ["Robert", "R.", "R. J."]
+    url: https://scholar.google.com/citations?user=s92C6dAAAAAJ&hl=en
+
+"Pope":
+  - firstname: ["James", "J."]
+    url: https://scholar.google.com/citations?user=sO_Jzc8AAAAJ&hl=en
+
+"Portelli":
+  - firstname: ["Anthony", "Anthony J.", "A. J.", "A."]
+    url: https://dblp.org/pid/184/4838.html
+
+"Raza":
+  - firstname: ["Usman", "U."]
+    url: https://scholar.google.com/citations?user=q8xnQJYAAAAJ&hl=en
+
+"Rigazzi":
+  - firstname: ["Giovanni", "G."]
+    url: https://scholar.google.com/citations?user=wOchaOsAAAAJ&hl=en
+
+"Safi":
+  - firstname: ["Hossein", "H."]
+    url: https://scholar.google.com/citations?user=G-j2JCAAAAAJ&hl=en
+
+"Sanchez-Mompo":
+  - firstname: ["Adrian", "A."]
+    url: https://scholar.google.com/citations?user=nU5n5VEAAAAJ&hl=en
+
+"Santos-Rodriguez":
+  - firstname: ["Raúl", "Raul", "R."]
+    url: https://scholar.google.com/citations?user=U_ldrLcAAAAJ&hl=en
+
+"Simeonidou":
+  - firstname: ["Dimitra", "D."]
+    url: https://scholar.google.com/citations?user=DppopzYAAAAJ&hl=en
+
+"Sooriyabandara":
+  - firstname: ["Mahesh", "M."]
+    url: https://dblp.org/pid/15/5883.html
+
+"Spyridopoulos":
+  - firstname: ["Theodoros", "Theo", "T."]
+    url: https://scholar.google.com/citations?user=X0sHr6AAAAAJ&hl=en
+
+"Stanoev":
+  - firstname: ["Aleksandar", "A."]
+    url: https://scholar.google.com/citations?user=KHrzQ8oAAAAJ&hl=en
+
+"Tassi":
+  - firstname: ["Andrea", "A."]
+    url: https://scholar.google.com/citations?user=qt-NloQAAAAJ&hl=en
+
+"Tavakkolnia":
+  - firstname: ["Iman", "I."]
+    url: https://scholar.google.co.uk/citations?user=u8hTDB0AAAAJ&hl=en
+
+"Xenos":
+  - firstname: ["Evangelos", "E."]
+    url: https://scholar.google.com/citations?user=-_5TQeMAAAAJ&hl=en
+
+"Wang":
+  - firstname: ["Xiaoyang", "X."]
+    url: https://scholar.google.com/citations?user=Z7I0kvYAAAAJ&hl=en
+
+"Wu":
+  - firstname: ["Yulei", "Y."]
+    url: https://scholar.google.com/citations?user=RQufjfYAAAAJ&hl=en

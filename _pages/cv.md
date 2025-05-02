@@ -1,11 +1,37 @@
 ---
-layout: cv
+layout: newcv
+title: vitae
 permalink: /cv/
-title: cv
+description:
 nav: true
-nav_order: 5
-cv_pdf: example_pdf.pdf # you can also use external links here
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
+social: true
+nav_order: 4
+cv_pdf:
+description:
+post-header: false
 ---
+<header class="post-header">
+    <h1 class="post-title">My CVs</h1>
+    <p class="post-description">A PDF version of my CVs.</p>
+</header>
+
+<div class="projects row">
+    <div class="cv-grid-item">
+        <div class="card text-center hoverable">
+            <div class="card-body" id="industrial">
+                <iframe class="cv-frame" src="/assets/pdf/cvs/industrial_I_Mavromatis.pdf#toolbar=0&statusbar=0&navpanes=0" title="Industrial CV"></iframe>
+                <h2>Industrial CV</h2>
+                <a href="/assets/pdf/cvs/industrial_I_Mavromatis.pdf" class="btn btn-sm" role="button" title="Type">Download</a>
+            </div>
+        </div>
+    </div>
+    <div class="cv-grid-item">
+        <div class="card text-center hoverable">
+            <div class="card-body" id="academic">
+                <iframe class="cv-frame" src="/assets/pdf/cvs/academic_I_Mavromatis.pdf#toolbar=0&statusbar=0&navpanes=0" title="Academic CV"></iframe>
+                <h2>Academic CV</h2>
+                <a href="/assets/pdf/cvs/academic_I_Mavromatis.pdf" class="btn btn-sm" role="button" title="Type">Download</a>
+            </div>
+        </div>
+    </div>
+</div>
