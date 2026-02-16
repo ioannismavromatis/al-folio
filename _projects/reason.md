@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The REASON Project
-description: Funded by DCSM Future RAN - Future Open Networks Research
+description: Funded by DSIT
 year: 2022
 end: ongoing
 website: https://reason-open-networks.ac.uk

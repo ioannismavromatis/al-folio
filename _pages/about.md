@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Lead 5G/Future Networks Technologist | <a href="https://www.digicatapult.org.uk">Digital Catapult</a>
+subtitle: Lead Research Engineer | <a href="https://www.digicatapult.org.uk">Digital Catapult</a>
 
 profile:
   align: right
@@ -26,19 +26,21 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 #### About me:
-Passionate in driving innovation and pioneering R&D in future wireless and networking systems.
+I have over a decade of experience at the intersection of research and development, building robust, scalable, and forward-looking technologies that bridge lab innovation and real-world deployments.
 
-I am currently involved in the [REASON](https://reason-open-networks.ac.uk) project focusing on building a state-of-the-art open AI-native Multi-access 6G Communication network.
+Currently, I lead the technical delivery of [REASON-6G](https://reason-open-networks.ac.uk) and [guarDian](https://www.celticnext.eu/project-sustainet-guardian/) projects at Digital Catapult, focusing on multi-domain orchestration, self-healing network architectures, and energy-efficient AI/ML operations. My work spans Cloud-native Platforms, Machine Learning and Federated Learning, and large-scale system deployments and optimisations.
 
-In my previous roles, I led as the backend architect and developer for the [UMBRELLA ecosystem](https://www.umbrellaiot.com), supporting multiple testbeds and IoT devices in the northern part of Bristol, UK, and contributed to various research areas around Machine Learning, Cybersecurity, and Wireless Communications.
+In my previous roles, I architected secure IoT platforms, designed Federated drift detection frameworks, led Green AI research activities, delivered optimisation mechanism for vehicular communications, and more. I was also the solution architect and main developer to the award-winning [UMBRELLA](https://www.umbrellaiot.com) project, delivering a real-world, city-scale IoT backend platform.
 
-Overall, I enjoy working with cutting-edge technologies, I am passionate about contributing to open-source projects and I specialise in designing, building and deploying large-scale IoT and 5G testbeds.
+Overall, I enjoy working with cutting-edge technologies, I am passionate about contributing to open-source projects and delivering ideas end-to-end, from the inception, to the validation at large-scale environments.
 
 <div class="row">
 </div>
 ---
 #### Research Interests:
-My interests span around 5G & Beyond, Future Communication Networks, Sustainability for Machine Learning & Federated Learning, Cybersecurity and Cloud-native technologies. In the past, I worked in various areas around Connected and Autonomous Vehicles (CAVs), Cooperative Intelligent Transportation Systems (C-ITSs), Serverless Computing, Industrial Control Systems, and Digital Twins.
+My interests span around Cloud-native computing, Future Communication Networks, Machine Learning & Federated Learning, Sustainability deployments, Cybersecurity and Service/Network orchestration.
+
+In the past, I worked in various areas around Connected and Autonomous Vehicles (CAVs), Cooperative Intelligent Transportation Systems (C-ITSs), Serverless Computing, Industrial Control Systems, and Digital Twins.
 
 ---
 #### Open-source Projects:
@@ -88,4 +90,4 @@ My interests span around 5G & Beyond, Future Communication Networks, Sustainabil
 * Research Assistant at the [University of Bristol](https://www.bristol.ac.uk), working on:
   * [VENTURER](https://www.venturer-cars.com).
 
-I hold a "PhD in Vehicular Communications" from the [University of Bristol](https://www.bristol.ac.uk), where I worked with [Prof Robert Piechocki](http://www.bristol.ac.uk/engineering/people/robert-j-piechocki) and [Dr Andrea Tassi](http://andreatassi.uk). Before that, I got an "MSc in Wireless Communications and Signal Processing" from the [University of Bristol](https://www.bristol.ac.uk), and a "BSc in Computer Science" from [ATEITH](https://www.teithe.gr).
+I hold a "PhD in Vehicular Communications" from the [University of Bristol, UK](https://www.bristol.ac.uk), where I worked with [Prof Robert Piechocki](http://www.bristol.ac.uk/engineering/people/robert-j-piechocki) and [Dr Andrea Tassi](http://andreatassi.uk). Before that, I got an "MSc in Wireless Communications and Signal Processing" from the [University of Bristol, UK](https://www.bristol.ac.uk), and a "BSc in Computer Science" from Alexander Technological Institute of Thessaloniki, Greece, currently called [International Hellenic University](https://www.ihu.gr).
