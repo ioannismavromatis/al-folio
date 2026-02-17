@@ -1,65 +1,45 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A list of projects that I am (or was) involved throughout the years
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: []
 horizontal: false
 ---
 
 <!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+<div class="projects column">
+
+  {% assign sorted_projects= site.projects | sort: "end" | reverse %}
+  {% for project in sorted_projects %}
+
+  <div class="card mb-3 hoverable btn-project projectbutton card-horizontal">
+    <div class="row no-gutters ">
+      <div class="col-md-4">
+        {% if project.img %}
+        <img class="card-img-project" src="/assets/projects{{ project.img | relative_url }}">
+        {% else %}
+        <img class="card-img-project" src="/assets/projects/unknown.png">
+        {% endif %}
+      </div>
+      <div class="col">
+        <h2 class="card-title">{{ project.title }}</h2>
+        <span style="display:block;" class="card-text span-year">{{ project.description }}</span>
+        <br>
+        <span style="display:block;" class="card-text span-year span-space"><i>Year started: {{ project.year }} &nbsp;&nbsp;&nbsp; Year Ended: {{ project.end }}</i></span>
+      {%- if project.website -%}
+        <p class="card-text">For more information: <a class="project-title" href="{{ project.website }}">{{ project.website }}</a></p>
+      {%- endif -%}
+
+      </div>
+      <div class="hidden">
+        <p>{{ project.long_description }}</p>
+      </div>
     </div>
   </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
 
-{% else %}
+{% endfor %}
 
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
 </div>

@@ -168,6 +168,48 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+  .btn {
+    color: var(--global-text-color);
+    border: 1px solid var(--global-text-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border: 1px solid var(--global-text-color);
+      border-color: var(--global-theme-color);
+    }
+  }
+
+  .card-img-project {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 25px;
+    width: auto;
+    padding: 1em;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &.btn-project {
+    cursor: pointer; /* Makes the card act like a button */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    border: 1px solid transparent; /* Default border is transparent */
+  }
+  &.btn-project:hover {
+    border: 3px solid var(--global-theme-color); /* Add a border on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better effect */
+  }
 
   .card-img {
     width: 100%;
@@ -180,6 +222,25 @@ ul.task-list input[type="checkbox"] {
 
   .card-body {
     padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  }
+
+  &.projectbutton {
+    .hidden {
+      font-size: 0.875rem;
+      max-height: 0;
+      overflow: hidden;
+      text-align: justify;
+      transition: all 0.15s ease;
+
+      p {
+        line-height: 1.4em;
+        margin: 10px;
+      }
+    }
+
+    .hidden.open {
+      max-height: 100em;
+    }
   }
 }
 
@@ -692,7 +753,39 @@ footer.sticky-bottom {
   }
 }
 
+.bib-header {
+  a.btn {
+    color: var(--global-text-color);
+    border: 1px solid var(--global-text-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+    }
+  }
+}
+
 // Publications
+@media only screen and (min-device-width : 640px) {
+  ol.bibliography {
+    list-style-type: none;
+  }
+
+  ol.bibliography>li:before {
+    content: "["counter(bibitem) "]";
+    position: absolute;
+    padding-top: 26px;
+    padding-left: 26px;
+  }
+
+  ol.bibliography>li {
+    counter-increment: bibitem -1;
+  }
+}
 
 .publications {
   margin-top: 2rem;
@@ -804,6 +897,15 @@ footer.sticky-bottom {
         }
         a.award.btn {
           border-color: var(--global-highlight-color);
+        }
+
+        .new-strong {
+          font-weight: bold;
+          font-size: large;
+          background-color: $red-color-dark;
+          color: white;
+          border-radius: 3px;
+          padding: 2px 5px;
         }
       }
 

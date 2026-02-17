@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - main
+      - ioannismavromatis.github.io
     paths:
       - "assets/**"
       - "_sass/**"
@@ -33,6 +34,7 @@ on:
     branches:
       - master
       - main
+      - ioannismavromatis.github.io
     paths:
       - "assets/**"
       - "_sass/**"

@@ -3,7 +3,7 @@ set -euo pipefail
 
 echo "Entry point script running"
 
-CONFIG_FILE=_config.yml
+CONFIG_FILE=_config_ioannis.yml
 
 # Function to manage Gemfile.lock
 manage_gemfile_lock() {
@@ -21,7 +21,7 @@ manage_gemfile_lock() {
 
 start_jekyll() {
     manage_gemfile_lock
-    bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling &
+    bundle exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling --config $CONFIG_FILE &
 }
 
 start_jekyll
