@@ -10,7 +10,8 @@ nav_order: 4
 <!-- pages/datasets.md -->
 <div class="projects column">
 
-  {% assign sorted_datasets= site.datasets | sort: "year" | reverse %}
+  {% assign datasets_collection = site.datasets | default: empty %}
+  {% assign sorted_datasets= datasets_collection | sort: "year" | reverse %}
   {% for dataset in sorted_datasets %}
   {% assign project = dataset %}
 
