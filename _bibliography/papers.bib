@@ -1,5 +1,66 @@
 ---
 ---
+@article{driftStreetlightDataset,
+    author={Li, P. and {Mavromatis}, I. and {Sahadevan}, A. and {Farnham}, T. and {Aijaz}, A., and {Khan}, A.},
+    title = {{A Multi-Year Urban Streetlight Imagery Dataset for Visual Monitoring and Spatio-Temporal Drift Detection}},
+    journal = {Data in Brief},
+    year = {2025},
+    abstract = {We present a large-scale, longitudinal visual dataset of urban streetlights captured by 22 fixed-angle cameras deployed across Bristol, U.K., from 2021 to 2025. The dataset contains over 526,000 images, collected hourly under diverse lighting, weather, and seasonal conditions. Each image is accompanied by rich metadata, including timestamps, GPS coordinates, and device identifiers. This unique real-world dataset enables detailed investigation of visual drift, anomaly detection, and MLOps strategies in smart city deployments. To promote secondary analysis, we additionally provide a self-supervised framework based on convolutional variational autoencoders (CNN-VAEs). Models are trained separately for each camera node and for day/night image sets. We define two per-sample drift metrics: relative centroid drift, capturing latent space deviation from a baseline quarter, and relative reconstruction error, measuring normalized image-domain degradation. This dataset provides a realistic, fine-grained benchmark for evaluating long-term model stability, drift-aware learning, and deployment-ready vision systems. The images and structured metadata are publicly released in JPEG and CSV formats, supporting reproducibility and downstream applications such as streetlight monitoring, weather inference, and urban scene understanding. The dataset can be found at https://doi.org/10.5281/zenodo.17781192 and https://doi.org/10.5281/zenodo.17859120.},
+    month={December},
+    pdf={driftStreetlightDataset.pdf},
+    arxiv={2512.12205},
+    keywords={Streetlight, Computer Vision, Machine Learning, Drift Detection},
+    bibtex_show=true
+}
+
+@inproceedings{gitopsNephio,
+    author={S. {Ghosh} and I. {Mavromatis} and K. {Antonakoglou} and K. {Katsaros}},
+    title = {{Performance Evaluation of Intent-Based Networking Scenarios: A GitOps and Nephio Approach}},
+    booktitle={Proc. of IEEE CSCN},
+    year = {2025},
+    month={September},
+    abstract = {GitOps has emerged as a foundational paradigm for managing cloud-native infrastructures by enabling declarative configuration, version-controlled state, and automated reconciliation between intents and runtime deployments. Despite its widespread adoption, the performance and scalability of GitOps tools in Intent-Based Networking (IBN) scenarios are insufficiently evaluated. This paper presents a reproducible, metric-driven benchmarking, assessing the latency and resource overheads of three widely used GitOps operators: Argo CD, Flux CD, and ConfigSync. We conduct controlled experiments under both single- and multi-intent scenarios, capturing key performance indicators such as latency and resource consumption. Our results highlight trade-offs between the tools in terms of determinism, resource efficiency, and responsiveness. We further investigate a realistic orchestration scenario, using Nephio as our orchestrator, to quantify the processing latency and overhead in declarative end-to-end deployment pipelines. Our findings can offer valuable insights for tool selection and optimisation in future autonomous network orchestration systems.},
+    pdf={gitops.pdf},
+    doi={10.1109/CSCN67557.2025.11230760},
+    html={https://ieeexplore.ieee.org/abstract/document/11230760},
+    keywords={GitOps, Intent-Based Networking, Nephio, Benchmarking, Cloud-Native Orchestration},
+    address={Bologna, Italy},
+    bibtex_show=true
+}
+
+@article{idsReview,
+    title = {{Collaborative Intrusion Detection in Resource-constrained IoT environments: Challenges, Methods, and Future Directions a review}},
+    journal = {Journal of Information Security and Applications},
+    volume = {93},
+    pages = {104127},
+    year = {2025},
+    month={September},
+    doi = {10.1016/j.jisa.2025.104127},
+    html = {https://www.sciencedirect.com/science/article/pii/S2214212625001644},
+    author = {V. {Ieropoulos} and E. {Anthi} and T. {Spyridopoulos} and P. {Burnap}, and I. {Mavromatis} and A. {Khan} and P. {Carnelli}},
+    keywords = {IoT, Resource-constrained, Collaborative learning, Intrusion detection systems},
+    abstract = {The rapid growth of technology has increased interconnected large-scale systems, broadening the attack surface for malicious actors. Traditional security solutions often employ centralised management of components like firewalls and intrusion detection systems for consistent configuration. This centralisation introduces a single point of failure, risking severe consequences if compromised. While redundancy can mitigate concerns in IT systems, it does not scale well for larger systems. Edge computing, which pushes computation closer to endpoint devices, has been explored to improve scalability. The research community has also explored distributing and decentralising cybersecurity operations, especially intrusion detection, using new machine learning methods that mix centralised and distributed approaches to scale effectively while preserving data privacy. However, challenges remain in implementing these methods in large-scale IoT systems due to resource constraints. This paper evaluates intrusion detection methods in large-scale, resource-limited IoT systems, exploring the benefits of low-powered devices for network security and discussing solutions to current implementation challenges.},
+    pdf={idsReview.pdf},
+    bibtex_show=true
+}
+
+@article{cdoNovelDesign,
+    title = {{Future Open Networks Cross-Domain Cognitive Orchestration: A Novel Design Paradigm}},
+    journal = {IEEE Access},
+    volume = {13},
+    pages = {105911 - 105951},
+    year = {2025},
+    month={June},
+    doi = {10.1109/ACCESS.2025.3580176},
+    html = {https://ieeexplore.ieee.org/abstract/document/11037413},
+    author = {S. {Ghosh} and H. {Asgari} and D. {Hond} and K. {Antonakoglou} and I. {Mavromatis} and N. {Butler} and R. {Hussain} and S. {Zeb} and K. {Katsaros} and S. {Moazzeni} and D. {Tee} and G. {Incorvaia} and  D. {Simeonidou}},
+    keywords = {Future Open Networks, Cross-Domain Orchestration, Cognition-Enabled Networking, 6G, System-Level Architecture, Cognitive and AI/ML.},
+    abstract = {Future Open Networks (FONs) are envisioned as large-scale, decentralised, and data-driven systems designed with open interfaces and interoperable standards to deliver diverse services and applications. The management and orchestration of these networks will utilise intelligent processing. This paper introduces a novel Cognitive Cross-Domain Orchestration (CDO) architectural framework for FONs, structured as a quad-view architecture. A background setting for the architecture is provided by a survey of relevant projects, followed by a requirements analysis for FON orchestration and management. The proposed CDO architectural framework consists of four distinct views: the Organizational View identifies stakeholders and business entities; the Functional View outlines the logical design; the Cognitive \& AI/ML View connects logical functions with supportive cognitive functions for network optimization; and the System-level View links these functions to the necessary physical and intangible assets. This segregation enables each view to provide a focused analysis of the roles, interactions, and properties, thereby promoting a coherent design. The paper also describes a plausible partial proof-of-concept implementation of the CDO System-level architecture. Within the context of this CDO implementation, stakeholder participation in the provision of an end-to-end service delivery orchestrated across multiple network domains is described.},
+    pdf={cdoNovelDesign.pdf},
+    bibtex_show=true
+}
+
+
 @inproceedings{camino,
     author={K. {Antonakoglou} and I. {Mavromatis} and S. {Ghosh} and K. {Katsaros}},
     title = {{CAMINO: Cloud-native Autonomous Management and Intent-based Orchestrator}},
@@ -7,8 +68,9 @@
     year = {2025},
     abstract = {This paper addresses the challenge of robust cellular connectivity in dense, underdeveloped urban environments, specifically focusing on Kathmandu, Nepal. As cities grow, existing cellular infrastructure struggles to meet the demand for reliable, high-throughput, and low-latency communication services. The lack of investment in new technologies and the intricacies of the cities' landscape poses even more difficulties for robust connectivity. This work addresses the above challenges in a cost-effective and flexible way. We investigate the deployment of LTE Nomadic Nodes (NNs) at a scale in order to enhance network capacity and coverage. Utilising a Digital Twin (DT), we simulate and optimise NN placement, considering Kathmandu's physical and environmental characteristics. Our approach leverages the DRIVE DT framework, which enables the systemic evaluation of various network configurations and user mobility scenarios. The results demonstrate that NNs significantly improve signal strength and expected user datarates, presenting a viable solution for enhancing urban cellular connectivity.},
     month={June},
+    html={https://ieeexplore.ieee.org/document/11036734},
     pdf={camino.pdf},
-    arxiv={2504.03586},
+    doi={10.1109/EuCNC/6GSummit63408.2025.11036734},
     keywords={Intent-driven, Cloud-native, MANO, Observability, Configuration-as-data},
     address={Poznan, Poland},
     bibtex_show=true
@@ -64,8 +126,9 @@
     year = {2025},
     abstract = {This paper addresses the challenge of robust cellular connectivity in dense, underdeveloped urban environments, specifically focusing on Kathmandu, Nepal. As cities grow, existing cellular infrastructure struggles to meet the demand for reliable, high-throughput, and low-latency communication services. The lack of investment in new technologies and the intricacies of the cities' landscape poses even more difficulties for robust connectivity. This work addresses the above challenges in a cost-effective and flexible way. We investigate the deployment of LTE Nomadic Nodes (NNs) at a scale in order to enhance network capacity and coverage. Utilising a Digital Twin (DT), we simulate and optimise NN placement, considering Kathmandu's physical and environmental characteristics. Our approach leverages the DRIVE DT framework, which enables the systemic evaluation of various network configurations and user mobility scenarios. The results demonstrate that NNs significantly improve signal strength and expected user datarates, presenting a viable solution for enhancing urban cellular connectivity.},
     month={January},
+    html={https://ieeexplore.ieee.org/document/10976041},
+    doi={10.1109/CCNC54725.2025.10976041},
     pdf={nepalConnect.pdf},
-    arxiv={2411.09380},
     keywords={Digital Twins, Optimal Positioning, LTE, Nomadic Nodes, Dense Urban Environment.},
     address={Las Vegas, USA},
     bibtex_show=true
