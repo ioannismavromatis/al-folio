@@ -37,11 +37,23 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/dataset/";
           },
+        },{id: "nav-news",
+          title: "news",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/newspage/";
+          },
         },{id: "datasets-human-body-tracking-walking-actions-dataset",
           title: 'Human Body Tracking - Walking Actions Dataset',
           description: "A dataset of body tracking information captured using two Azure Kinect sensors",
           section: "Datasets",handler: () => {
               window.location.href = "/datasets/body_tracking/";
+            },},{id: "datasets-data-drift-streetlight-images-dataset",
+          title: 'Data Drift Streetlight Images Dataset',
+          description: "~526k JPEG images of streetlight columns showing data drift across time.",
+          section: "Datasets",handler: () => {
+              window.location.href = "/datasets/data_drift/";
             },},{id: "datasets-flourish-car-trials-dataset-1",
           title: 'FLOURISH Car Trials Dataset 1',
           description: "A dataset of ~50M exchanged CAMs.",
